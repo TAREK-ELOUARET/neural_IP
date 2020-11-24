@@ -1,4 +1,4 @@
-		                 ######################################## README ###########################################
+		        ######################################## README ###########################################
 
 I put in the project above two folder, the first contains the development using HLS tool, and the second based on VHDL language.
 
