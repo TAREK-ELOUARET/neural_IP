@@ -1,0 +1,423 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Dec 11 16:29:15 2020
+# Process ID: 29828
+# Current directory: /users/tareelou/neural_network_simul/neural_network_simul.runs/impl_4
+# Command line: vivado -log top_level.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_level.tcl -notrace
+# Log file: /users/tareelou/neural_network_simul/neural_network_simul.runs/impl_4/top_level.vdi
+# Journal file: /users/tareelou/neural_network_simul/neural_network_simul.runs/impl_4/vivado.jou
+#-----------------------------------------------------------
+source top_level.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 186 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc]
+CRITICAL WARNING: [Vivado 12-2272] Clock names may not contain wildcard characters, as it confuses tcl. Skipping 'VecOut_mux[*]' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:2]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:24]
+Finished Parsing XDC File [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1414.238 ; gain = 407.875 ; free physical = 122114 ; free virtual = 127049
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: opt_design -directive RuntimeOptimized
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-1223] The version limit for your license is '2019.01' and will expire in -680 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.35 . Memory (MB): peak = 1514.273 ; gain = 92.031 ; free physical = 122015 ; free virtual = 126947
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 11f6b976c
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:24]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1bb0ae942
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1969.820 ; gain = 455.547 ; free physical = 120879 ; free virtual = 125811
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant propagation | Checksum: 1bb0ae942
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1969.820 ; gain = 455.547 ; free physical = 120857 ; free virtual = 125788
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 303 unconnected nets.
+INFO: [Opt 31-11] Eliminated 1 unconnected cells.
+Phase 3 Sweep | Checksum: cecb2da3
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1969.820 ; gain = 455.547 ; free physical = 120822 ; free virtual = 125754
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 4 BUFG optimization | Checksum: cecb2da3
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1969.820 ; gain = 455.547 ; free physical = 120817 ; free virtual = 125748
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1969.820 ; gain = 0.000 ; free physical = 120817 ; free virtual = 125748
+Ending Logic Optimization Task | Checksum: cecb2da3
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1969.820 ; gain = 455.547 ; free physical = 120817 ; free virtual = 125748
+INFO: [Common 17-83] Releasing license: Implementation
+26 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1969.820 ; gain = 555.582 ; free physical = 120814 ; free virtual = 125746
+INFO: [Common 17-1381] The checkpoint '/users/tareelou/neural_network_simul/neural_network_simul.runs/impl_4/top_level_opt.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /users/tareelou/neural_network_simul/neural_network_simul.runs/impl_4/top_level_drc_opted.rpt.
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design -directive RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-1223] The version limit for your license is '2019.01' and will expire in -680 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'RuntimeOptimized' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2033.852 ; gain = 0.000 ; free physical = 120425 ; free virtual = 125357
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2033.852 ; gain = 0.000 ; free physical = 120425 ; free virtual = 125357
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:24]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: ff341295
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2041.836 ; gain = 7.984 ; free physical = 120332 ; free virtual = 125264
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 1344ccb5f
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2080.879 ; gain = 47.027 ; free physical = 120317 ; free virtual = 125249
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 1344ccb5f
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2080.879 ; gain = 47.027 ; free physical = 120314 ; free virtual = 125246
+Phase 1 Placer Initialization | Checksum: 1344ccb5f
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2080.879 ; gain = 47.027 ; free physical = 120283 ; free virtual = 125215
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1070e7486
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 2136.906 ; gain = 103.055 ; free physical = 120160 ; free virtual = 125092
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1070e7486
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 2136.906 ; gain = 103.055 ; free physical = 120160 ; free virtual = 125092
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 177af67d4
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 2136.906 ; gain = 103.055 ; free physical = 120159 ; free virtual = 125092
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: fa874522
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 2136.906 ; gain = 103.055 ; free physical = 120159 ; free virtual = 125092
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: fa874522
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 2136.906 ; gain = 103.055 ; free physical = 120159 ; free virtual = 125092
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 14e4a1b38
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 2136.906 ; gain = 103.055 ; free physical = 120160 ; free virtual = 125092
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: b72836cf
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 2136.906 ; gain = 103.055 ; free physical = 120156 ; free virtual = 125089
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 13c98c533
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 2136.906 ; gain = 103.055 ; free physical = 120124 ; free virtual = 125056
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 18e388d38
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 2136.906 ; gain = 103.055 ; free physical = 120120 ; free virtual = 125053
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 18e388d38
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 2136.906 ; gain = 103.055 ; free physical = 120118 ; free virtual = 125051
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 19e9c3143
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 2136.906 ; gain = 103.055 ; free physical = 120125 ; free virtual = 125058
+Phase 3 Detail Placement | Checksum: 19e9c3143
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 2136.906 ; gain = 103.055 ; free physical = 120126 ; free virtual = 125059
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:24]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-24.726. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: cd8812d4
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:15 . Memory (MB): peak = 2136.906 ; gain = 103.055 ; free physical = 120108 ; free virtual = 125041
+Phase 4.1 Post Commit Optimization | Checksum: cd8812d4
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:15 . Memory (MB): peak = 2136.906 ; gain = 103.055 ; free physical = 120106 ; free virtual = 125038
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: cd8812d4
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:15 . Memory (MB): peak = 2136.906 ; gain = 103.055 ; free physical = 120103 ; free virtual = 125036
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: cd8812d4
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:15 . Memory (MB): peak = 2136.906 ; gain = 103.055 ; free physical = 120103 ; free virtual = 125036
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: ac797424
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:15 . Memory (MB): peak = 2136.906 ; gain = 103.055 ; free physical = 120103 ; free virtual = 125036
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: ac797424
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:15 . Memory (MB): peak = 2136.906 ; gain = 103.055 ; free physical = 120102 ; free virtual = 125035
+Ending Placer Task | Checksum: a88c5eb2
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:15 . Memory (MB): peak = 2136.906 ; gain = 103.055 ; free physical = 120100 ; free virtual = 125033
+INFO: [Common 17-83] Releasing license: Implementation
+46 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:16 . Memory (MB): peak = 2136.906 ; gain = 103.055 ; free physical = 120099 ; free virtual = 125032
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.30 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2136.906 ; gain = 0.000 ; free physical = 120109 ; free virtual = 125045
+INFO: [Common 17-1381] The checkpoint '/users/tareelou/neural_network_simul/neural_network_simul.runs/impl_4/top_level_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00.40 ; elapsed = 00:00:00.47 . Memory (MB): peak = 2136.906 ; gain = 0.000 ; free physical = 120110 ; free virtual = 125044
+report_utilization: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2136.906 ; gain = 0.000 ; free physical = 120109 ; free virtual = 125043
+report_control_sets: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.19 . Memory (MB): peak = 2136.906 ; gain = 0.000 ; free physical = 120110 ; free virtual = 125044
+Command: route_design -directive RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-1223] The version limit for your license is '2019.01' and will expire in -680 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'RuntimeOptimized'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 8c699cba ConstDB: 0 ShapeSum: 1c22c1f8 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: a3ff09da
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:01:26 . Memory (MB): peak = 2320.098 ; gain = 183.191 ; free physical = 120403 ; free virtual = 125341
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: a3ff09da
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:01:27 . Memory (MB): peak = 2320.098 ; gain = 183.191 ; free physical = 120403 ; free virtual = 125341
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: a3ff09da
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:01:27 . Memory (MB): peak = 2320.098 ; gain = 183.191 ; free physical = 120366 ; free virtual = 125305
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: a3ff09da
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:01:27 . Memory (MB): peak = 2320.098 ; gain = 183.191 ; free physical = 120366 ; free virtual = 125305
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: eb0cb894
+
+Time (s): cpu = 00:01:50 ; elapsed = 00:01:28 . Memory (MB): peak = 2334.492 ; gain = 197.586 ; free physical = 120341 ; free virtual = 125280
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-23.695| TNS=-898.676| WHS=-0.585 | THS=-8.901 |
+
+Phase 2 Router Initialization | Checksum: 16aef422a
+
+Time (s): cpu = 00:01:51 ; elapsed = 00:01:28 . Memory (MB): peak = 2334.492 ; gain = 197.586 ; free physical = 120342 ; free virtual = 125280
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1871a218e
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:01:29 . Memory (MB): peak = 2334.492 ; gain = 197.586 ; free physical = 120341 ; free virtual = 125280
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 18a342bfa
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:29 . Memory (MB): peak = 2334.492 ; gain = 197.586 ; free physical = 120341 ; free virtual = 125280
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-27.705| TNS=-1042.846| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 188c8064c
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:29 . Memory (MB): peak = 2334.492 ; gain = 197.586 ; free physical = 120341 ; free virtual = 125280
+Phase 4 Rip-up And Reroute | Checksum: 188c8064c
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:29 . Memory (MB): peak = 2334.492 ; gain = 197.586 ; free physical = 120341 ; free virtual = 125280
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 78c925fe
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:30 . Memory (MB): peak = 2334.492 ; gain = 197.586 ; free physical = 120341 ; free virtual = 125280
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 78c925fe
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:30 . Memory (MB): peak = 2334.492 ; gain = 197.586 ; free physical = 120341 ; free virtual = 125280
+Phase 5 Delay and Skew Optimization | Checksum: 78c925fe
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:30 . Memory (MB): peak = 2334.492 ; gain = 197.586 ; free physical = 120341 ; free virtual = 125280
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: e1c41dbd
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:30 . Memory (MB): peak = 2334.492 ; gain = 197.586 ; free physical = 120341 ; free virtual = 125280
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-27.707| TNS=-1046.357| WHS=0.144  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: e1c41dbd
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:30 . Memory (MB): peak = 2334.492 ; gain = 197.586 ; free physical = 120341 ; free virtual = 125280
+Phase 6 Post Hold Fix | Checksum: e1c41dbd
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:30 . Memory (MB): peak = 2334.492 ; gain = 197.586 ; free physical = 120341 ; free virtual = 125280
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0418266 %
+  Global Horizontal Routing Utilization  = 0.0314142 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 36.036%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 49.5495%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 44.1176%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 23.5294%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 5bd8c7d2
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:30 . Memory (MB): peak = 2334.492 ; gain = 197.586 ; free physical = 120341 ; free virtual = 125280
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 5bd8c7d2
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:30 . Memory (MB): peak = 2334.492 ; gain = 197.586 ; free physical = 120341 ; free virtual = 125280
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: a294b31f
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:30 . Memory (MB): peak = 2334.492 ; gain = 197.586 ; free physical = 120341 ; free virtual = 125280
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-27.707| TNS=-1046.357| WHS=0.144  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: a294b31f
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:30 . Memory (MB): peak = 2334.492 ; gain = 197.586 ; free physical = 120341 ; free virtual = 125280
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:30 . Memory (MB): peak = 2334.492 ; gain = 197.586 ; free physical = 120341 ; free virtual = 125280
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+60 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:59 ; elapsed = 00:01:31 . Memory (MB): peak = 2334.492 ; gain = 197.586 ; free physical = 120341 ; free virtual = 125280
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2334.492 ; gain = 0.000 ; free physical = 120331 ; free virtual = 125271
+INFO: [Common 17-1381] The checkpoint '/users/tareelou/neural_network_simul/neural_network_simul.runs/impl_4/top_level_routed.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /users/tareelou/neural_network_simul/neural_network_simul.runs/impl_4/top_level_drc_routed.rpt.
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:24]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /users/tareelou/neural_network_simul/neural_network_simul.runs/impl_4/top_level_methodology_drc_routed.rpt.
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:24]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:24]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+Command: report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb -rpx top_level_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+73 Infos, 1 Warnings, 2 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 11 16:31:48 2020...

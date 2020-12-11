@@ -1,0 +1,1485 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Dec 11 16:29:15 2020
+# Process ID: 29826
+# Current directory: /users/tareelou/neural_network_simul/neural_network_simul.runs/impl_5
+# Command line: vivado -log top_level.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_level.tcl -notrace
+# Log file: /users/tareelou/neural_network_simul/neural_network_simul.runs/impl_5/top_level.vdi
+# Journal file: /users/tareelou/neural_network_simul/neural_network_simul.runs/impl_5/vivado.jou
+#-----------------------------------------------------------
+source top_level.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 186 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc]
+CRITICAL WARNING: [Vivado 12-2272] Clock names may not contain wildcard characters, as it confuses tcl. Skipping 'VecOut_mux[*]' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:2]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:24]
+Finished Parsing XDC File [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1414.234 ; gain = 407.875 ; free physical = 122014 ; free virtual = 126946
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-1223] The version limit for your license is '2019.01' and will expire in -680 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.34 . Memory (MB): peak = 1512.270 ; gain = 90.031 ; free physical = 121990 ; free virtual = 126922
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:24]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 11f6b976c
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1bb0ae942
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1969.816 ; gain = 0.000 ; free physical = 120425 ; free virtual = 125357
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant propagation | Checksum: 1bb0ae942
+
+Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1969.816 ; gain = 0.000 ; free physical = 120425 ; free virtual = 125357
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 303 unconnected nets.
+INFO: [Opt 31-11] Eliminated 1 unconnected cells.
+Phase 3 Sweep | Checksum: cecb2da3
+
+Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.26 . Memory (MB): peak = 1969.816 ; gain = 0.000 ; free physical = 120426 ; free virtual = 125358
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 4 BUFG optimization | Checksum: cecb2da3
+
+Time (s): cpu = 00:00:00.37 ; elapsed = 00:00:00.37 . Memory (MB): peak = 1969.816 ; gain = 0.000 ; free physical = 120425 ; free virtual = 125357
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1969.816 ; gain = 0.000 ; free physical = 120425 ; free virtual = 125357
+Ending Logic Optimization Task | Checksum: cecb2da3
+
+Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.38 . Memory (MB): peak = 1969.816 ; gain = 0.000 ; free physical = 120425 ; free virtual = 125357
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: cecb2da3
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1969.816 ; gain = 0.000 ; free physical = 120425 ; free virtual = 125357
+INFO: [Common 17-83] Releasing license: Implementation
+26 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1969.816 ; gain = 555.582 ; free physical = 120425 ; free virtual = 125357
+INFO: [Common 17-1381] The checkpoint '/users/tareelou/neural_network_simul/neural_network_simul.runs/impl_5/top_level_opt.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /users/tareelou/neural_network_simul/neural_network_simul.runs/impl_5/top_level_drc_opted.rpt.
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-1223] The version limit for your license is '2019.01' and will expire in -680 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2033.848 ; gain = 0.000 ; free physical = 120340 ; free virtual = 125272
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2033.848 ; gain = 0.000 ; free physical = 120340 ; free virtual = 125272
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:24]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: ff341295
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2039.832 ; gain = 5.984 ; free physical = 120213 ; free virtual = 125145
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 1344ccb5f
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 2078.875 ; gain = 45.027 ; free physical = 120197 ; free virtual = 125129
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 1344ccb5f
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 2078.875 ; gain = 45.027 ; free physical = 120197 ; free virtual = 125129
+Phase 1 Placer Initialization | Checksum: 1344ccb5f
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 2078.875 ; gain = 45.027 ; free physical = 120170 ; free virtual = 125102
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1070e7486
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 2134.902 ; gain = 101.055 ; free physical = 120125 ; free virtual = 125058
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1070e7486
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 2134.902 ; gain = 101.055 ; free physical = 120125 ; free virtual = 125058
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 177af67d4
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 2134.902 ; gain = 101.055 ; free physical = 120121 ; free virtual = 125054
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: fa874522
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 2134.902 ; gain = 101.055 ; free physical = 120121 ; free virtual = 125053
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: fa874522
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 2134.902 ; gain = 101.055 ; free physical = 120121 ; free virtual = 125053
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 14e4a1b38
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 2134.902 ; gain = 101.055 ; free physical = 120120 ; free virtual = 125053
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: b72836cf
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 2134.902 ; gain = 101.055 ; free physical = 120109 ; free virtual = 125042
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 13c98c533
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 2134.902 ; gain = 101.055 ; free physical = 120110 ; free virtual = 125043
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 18e388d38
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 2134.902 ; gain = 101.055 ; free physical = 120110 ; free virtual = 125043
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 18e388d38
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 2134.902 ; gain = 101.055 ; free physical = 120110 ; free virtual = 125043
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 19e9c3143
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:13 . Memory (MB): peak = 2134.902 ; gain = 101.055 ; free physical = 120111 ; free virtual = 125044
+Phase 3 Detail Placement | Checksum: 19e9c3143
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:13 . Memory (MB): peak = 2134.902 ; gain = 101.055 ; free physical = 120111 ; free virtual = 125044
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:24]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-24.726. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: d6f4eefc
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 2134.902 ; gain = 101.055 ; free physical = 119955 ; free virtual = 124888
+Phase 4.1 Post Commit Optimization | Checksum: d6f4eefc
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 2134.902 ; gain = 101.055 ; free physical = 119955 ; free virtual = 124888
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: d6f4eefc
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 2134.902 ; gain = 101.055 ; free physical = 119955 ; free virtual = 124888
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: d6f4eefc
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 2134.902 ; gain = 101.055 ; free physical = 119955 ; free virtual = 124888
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: b5e6504c
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 2134.902 ; gain = 101.055 ; free physical = 119955 ; free virtual = 124888
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: b5e6504c
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 2134.902 ; gain = 101.055 ; free physical = 119954 ; free virtual = 124888
+Ending Placer Task | Checksum: a88c5eb2
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 2134.902 ; gain = 101.055 ; free physical = 119954 ; free virtual = 124888
+INFO: [Common 17-83] Releasing license: Implementation
+45 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:22 . Memory (MB): peak = 2134.902 ; gain = 101.055 ; free physical = 119954 ; free virtual = 124888
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119952 ; free virtual = 124887
+INFO: [Common 17-1381] The checkpoint '/users/tareelou/neural_network_simul/neural_network_simul.runs/impl_5/top_level_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.47 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119945 ; free virtual = 124879
+report_utilization: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.26 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119944 ; free virtual = 124878
+report_control_sets: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.19 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119940 ; free virtual = 124874
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-1223] The version limit for your license is '2019.01' and will expire in -680 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119939 ; free virtual = 124873
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+Phase 1 Physical Synthesis Initialization | Checksum: 111c39057
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119929 ; free virtual = 124863
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-24.726 | TNS=-930.984 |
+
+Phase 2 Fanout Optimization
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+Phase 2 Fanout Optimization | Checksum: 111c39057
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119930 ; free virtual = 124864
+
+Phase 3 Placement Based Optimization
+INFO: [Physopt 32-660] Identified 100 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_13_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_13
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_16_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_16
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_36_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_36
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_51
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_56_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_56
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_66_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_66
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_105_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_105
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_110_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_110
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_120_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_120
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_55_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_55
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_76_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_76
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_39_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_39
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_49_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_49
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_127_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_127
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_20_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_20
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_51
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_57_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_57
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_67_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_67
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_99_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_99
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[25].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[25]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_38_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_38
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_43_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_43
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_48_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_48
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_51
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_66_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_66
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_8_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_8
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_29_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_29
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_11_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_11
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_11_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_11
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_115_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_115
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_18_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_18
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_62_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_62
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_58_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_58
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_9_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_9
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_52_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_52
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[27].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[27]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_22_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_22
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_61_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_61
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_53_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_53
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_61_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_61
+INFO: [Physopt 32-663] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_51_n_0.  Re-placed instance Concurrent_loop_for_pixels[0].U1/result[15]_i_51
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_32_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_32
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_41_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_41
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_25_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_25
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_30_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_30
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_68_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_68
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_50_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_50
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_37_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_37
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[30].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[30]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_14_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_14
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_52_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_52
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_21_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_21
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_19_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_19
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_31_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_31
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_22_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_22
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_7_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_7
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_21_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_21
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_52_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_52
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_37_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_37
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[26].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[26]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_67_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_67
+INFO: [Physopt 32-663] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_123_n_0.  Re-placed instance Concurrent_loop_for_pixels[0].U1/result[23]_i_123
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_56_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_56
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_48_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_48
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_100_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_100
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_50_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_50
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_20_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_20
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_42_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_42
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_15_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_15
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_51
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[0]_i_5_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[0]_i_5
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_35_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_35
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_44_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_44
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_114_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_114
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_50_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_50
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_30_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_30
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[22].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[22]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_32_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_32
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_66_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_66
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[29].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[29]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_53_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_53
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_60_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_60
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_69_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_69
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_68_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_68
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_26_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_26
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_33_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_33
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_13_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_13
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_67_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_67
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_63_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_63
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_12_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_12
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_12_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_12
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_33_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_33
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_28_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_28
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_77_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_77
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_97_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_97
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_24_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_24
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_85_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_85
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_10_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_10
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_15_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_15
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_28_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_28
+INFO: [Physopt 32-661] Optimized 2 nets.  Re-placed 2 instances.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-24.726 | TNS=-930.984 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119768 ; free virtual = 124702
+Phase 3 Placement Based Optimization | Checksum: 13fdffdcd
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119768 ; free virtual = 124702
+
+Phase 4 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-241] No nets found for rewiring (Signal Push) optimization.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119767 ; free virtual = 124701
+Phase 4 Rewire | Checksum: 13fdffdcd
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119767 ; free virtual = 124701
+
+Phase 5 Critical Cell Optimization
+INFO: [Physopt 32-46] Identified 1 candidate net for critical-cell optimization.
+INFO: [Physopt 32-601] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_118_n_0. Net driver Concurrent_loop_for_pixels[0].U1/result[23]_i_118 was replaced.
+INFO: [Physopt 32-232] Optimized 1 net. Created 0 new instance.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-24.726 | TNS=-930.984 |
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119763 ; free virtual = 124699
+Phase 5 Critical Cell Optimization | Checksum: 8691826e
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119763 ; free virtual = 124699
+
+Phase 6 Fanout Optimization
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+Phase 6 Fanout Optimization | Checksum: 8691826e
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119763 ; free virtual = 124699
+
+Phase 7 Placement Based Optimization
+INFO: [Physopt 32-660] Identified 100 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_13_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_13
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_16_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_16
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_36_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_36
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_51
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_56_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_56
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_66_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_66
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_105_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_105
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_110_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_110
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_120_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_120
+INFO: [Physopt 32-663] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_55_n_0.  Re-placed instance Concurrent_loop_for_pixels[0].U1/result[15]_i_55
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_76_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_76
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_39_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_39
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_49_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_49
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_127_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_127
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_20_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_20
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_51
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_57_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_57
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_67_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_67
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_99_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_99
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[25].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[25]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_38_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_38
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_43_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_43
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_48_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_48
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_51
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_66_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_66
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_8_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_8
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_29_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_29
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_11_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_11
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_11_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_11
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_115_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_115
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_18_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_18
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_62_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_62
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_58_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_58
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_9_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_9
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_52_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_52
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[27].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[27]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_22_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_22
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_61_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_61
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_53_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_53
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_61_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_61
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_32_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_32
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_41_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_41
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_25_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_25
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_30_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_30
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_68_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_68
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_50_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_50
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_37_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_37
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[30].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[30]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_14_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_14
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_52_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_52
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_21_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_21
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_19_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_19
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_31_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_31
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_22_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_22
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_7_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_7
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_21_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_21
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_52_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_52
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_37_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_37
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[26].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[26]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_67_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_67
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_56_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_56
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_48_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_48
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_100_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_100
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_50_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_50
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_20_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_20
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_42_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_42
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_15_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_15
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_51
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[0]_i_5_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[0]_i_5
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_35_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_35
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_51
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_44_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_44
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_114_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_114
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_50_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_50
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_30_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_30
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[22].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[22]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_32_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_32
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_66_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_66
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[29].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[29]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_53_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_53
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_60_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_60
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_69_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_69
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_68_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_68
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_26_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_26
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_33_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_33
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_13_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_13
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_67_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_67
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_63_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_63
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_12_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_12
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_12_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_12
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_33_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_33
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_28_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_28
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_77_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_77
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_97_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_97
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_24_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_24
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_85_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_85
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_10_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_10
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_15_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_15
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_28_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_28
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_10_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_10
+INFO: [Physopt 32-661] Optimized 1 net.  Re-placed 1 instance.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-24.716 | TNS=-930.664 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119695 ; free virtual = 124630
+Phase 7 Placement Based Optimization | Checksum: a477743e
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:15 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119694 ; free virtual = 124629
+
+Phase 8 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-241] No nets found for rewiring (Signal Push) optimization.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119690 ; free virtual = 124624
+Phase 8 Rewire | Checksum: a477743e
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:15 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119689 ; free virtual = 124624
+
+Phase 9 Critical Cell Optimization
+INFO: [Physopt 32-46] Identified 1 candidate net for critical-cell optimization.
+INFO: [Physopt 32-572] Net Concurrent_loop_for_pixels[0].U1/result[23]_i_118_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+Phase 9 Critical Cell Optimization | Checksum: 111de52ad
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:15 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119697 ; free virtual = 124632
+
+Phase 10 Fanout Optimization
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+Phase 10 Fanout Optimization | Checksum: 111de52ad
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:15 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119697 ; free virtual = 124632
+
+Phase 11 Placement Based Optimization
+INFO: [Physopt 32-660] Identified 100 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_13_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_13
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_16_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_16
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_36_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_36
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_51
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_56_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_56
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_66_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_66
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_105_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_105
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_110_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_110
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_120_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_120
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_51
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_76_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_76
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_39_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_39
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_49_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_49
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_127_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_127
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_20_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_20
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_51
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_57_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_57
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_67_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_67
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_99_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_99
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[25].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[25]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_38_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_38
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_43_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_43
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_48_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_48
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_51
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_66_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_66
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_8_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_8
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_29_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_29
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_11_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_11
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_11_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_11
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_115_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_115
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_18_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_18
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_62_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_62
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_58_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_58
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_9_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_9
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_52_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_52
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[27].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[27]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_22_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_22
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_61_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_61
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_53_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_53
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_61_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_61
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_32_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_32
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_41_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_41
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_25_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_25
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_30_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_30
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_68_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_68
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_50_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_50
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_37_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_37
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[30].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[30]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_14_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_14
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_52_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_52
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_21_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_21
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_19_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_19
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_31_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_31
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_22_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_22
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_7_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_7
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_21_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_21
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_52_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_52
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_37_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_37
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[26].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[26]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_67_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_67
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_56_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_56
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_48_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_48
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_100_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_100
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_50_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_50
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_20_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_20
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_42_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_42
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_15_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_15
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_51
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[0]_i_5_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[0]_i_5
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_35_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_35
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_44_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_44
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_114_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_114
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_50_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_50
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_30_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_30
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[22].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[22]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_32_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_32
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_66_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_66
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[29].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[29]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_53_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_53
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_60_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_60
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_69_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_69
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_68_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_68
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_26_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_26
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_33_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_33
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_13_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_13
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_67_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_67
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_63_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_63
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_12_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_12
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_12_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_12
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_33_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_33
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_28_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_28
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_77_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_77
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_97_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_97
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_24_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_24
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_85_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_85
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_10_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_10
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_15_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_15
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_28_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_28
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_10_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_10
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_17_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_17
+INFO: [Physopt 32-661] Optimized 0 nets.  Re-placed 0 instances.
+Phase 11 Placement Based Optimization | Checksum: 8100bc71
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:21 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119600 ; free virtual = 124537
+
+Phase 12 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-241] No nets found for rewiring (Signal Push) optimization.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119600 ; free virtual = 124537
+Phase 12 Rewire | Checksum: 8100bc71
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:21 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119600 ; free virtual = 124537
+
+Phase 13 Critical Cell Optimization
+INFO: [Physopt 32-68] No nets found for critical-cell optimization.
+Phase 13 Critical Cell Optimization | Checksum: 8100bc71
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:21 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119600 ; free virtual = 124537
+
+Phase 14 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+Phase 14 DSP Register Optimization | Checksum: 8100bc71
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:21 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119600 ; free virtual = 124537
+
+Phase 15 BRAM Register Optimization
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+Phase 15 BRAM Register Optimization | Checksum: 8100bc71
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:21 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119601 ; free virtual = 124538
+
+Phase 16 Shift Register Optimization
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+Phase 16 Shift Register Optimization | Checksum: 8100bc71
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:21 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119601 ; free virtual = 124538
+
+Phase 17 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+Phase 17 DSP Register Optimization | Checksum: 8100bc71
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:21 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119601 ; free virtual = 124538
+
+Phase 18 BRAM Register Optimization
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+Phase 18 BRAM Register Optimization | Checksum: 8100bc71
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:21 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119601 ; free virtual = 124538
+
+Phase 19 Shift Register Optimization
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+Phase 19 Shift Register Optimization | Checksum: 8100bc71
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:21 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119601 ; free virtual = 124538
+
+Phase 20 Critical Pin Optimization
+INFO: [Physopt 32-606] Identified 100 candidate nets for critical-pin optimization.
+INFO: [Physopt 32-608] Optimized 13 nets.  Swapped 133 pins.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-24.650 | TNS=-928.552 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119594 ; free virtual = 124531
+Phase 20 Critical Pin Optimization | Checksum: 8100bc71
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:22 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119593 ; free virtual = 124530
+
+Phase 21 Very High Fanout Optimization
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+Phase 21 Very High Fanout Optimization | Checksum: 8100bc71
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:22 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 119588 ; free virtual = 124525
+
+Phase 22 Placement Based Optimization
+INFO: [Physopt 32-660] Identified 100 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_13_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_13
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_16_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_16
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_36_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_36
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_51
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_56_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_56
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_66_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_66
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_105_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_105
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_110_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_110
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_120_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_120
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_51
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_76_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_76
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_39_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_39
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_49_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_49
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_6_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_6
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_20_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_20
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_51
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_57_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_57
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_67_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_67
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_91_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_91
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_99_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_99
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[25].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[25]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_38_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_38
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_43_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_43
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_48_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_48
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_51
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_66_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_66
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_29_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_29
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_90_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_90
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_11_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_11
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_11_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_11
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_115_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_115
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_18_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_18
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_62_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_62
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_52_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_52
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[27].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[27]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_22_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_22
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_61_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_61
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_89_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_89
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_61_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_61
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_32_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_32
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_41_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_41
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_25_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_25
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_30_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_30
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_50_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_50
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_86_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_86
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_37_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_37
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[30].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[30]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_5_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_5
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_123_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_123
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_8_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_8
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_4_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_4
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_14_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_14
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_52_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_52
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_31_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_31
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_85_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_85
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_21_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_21
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_52_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_52
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_9_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_9
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[26].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[26]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_67_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_67
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_22_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_22
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_87_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_87
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_68_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_68
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_56_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_56
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_48_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_48
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_100_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_100
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_50_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_50
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_42_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_42
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_15_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_15
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_114_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_114
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_95_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_95
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_51
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[0]_i_5_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[0]_i_5
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_35_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_35
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_44_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_44
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_20_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_20
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_114_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_114
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_21_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_21
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_50_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_50
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_96_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_96
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_30_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_30
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[22].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[22]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_66_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_66
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[29].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[29]_i_1
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_60_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_60
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_19_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_19
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_69_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_69
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_98_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_98
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_7_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[3]_i_7
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_26_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_26
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_33_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[19]_i_33
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_13_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_13
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_67_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_67
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_6_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_6
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_63_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_63
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_12_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[7]_i_12
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_12_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[11]_i_12
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_33_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_33
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_28_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_28
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_77_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_77
+INFO: [Physopt 32-661] Optimized 0 nets.  Re-placed 0 instances.
+Phase 22 Placement Based Optimization | Checksum: f8ba36c0
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:27 . Memory (MB): peak = 2134.902 ; gain = 0.000 ; free physical = 120865 ; free virtual = 125803
+
+Phase 23 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-24.650 | TNS=-928.552 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg_n_0_[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[27]_i_3_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_13_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_21_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_21_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[3]_i_17_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[3]_i_33_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[3]_i_14_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[3]_i_18_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_38_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[3]_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[3]_i_19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_43_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[3]_i_15_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[3]_i_24_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_66_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_62_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_18_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_23_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_51_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_66_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_36_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_19_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_28_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_56_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_18_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_23_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_51_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_49_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_83_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_120_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_47_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_76_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_46_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_69_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_110_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_106_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_15_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_64_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_105_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_49_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_45_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_39_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_35_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_13_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_23_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_57_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_17_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_18_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_51_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_42_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_67_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_79_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_99_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_99
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_99_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_74_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_91_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/p_0_in[26]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-24.627 | TNS=-927.816 |
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-24.626 | TNS=-927.784 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_84_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_104_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_123_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_123
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_123_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/p_0_in[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_13_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_34_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_51
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_51_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/A[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net weight_IBUF[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net weight[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U2/mux_table_output[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/VecOut[1].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result_reg[1]
+INFO: [Physopt 32-572] Net Concurrent_loop_for_pixels[0].U1/VecOut[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/VecOut[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg_n_0_[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[25]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[27]_i_3_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_13_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_21_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[3]_i_17_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[3]_i_14_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_38_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[3]_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_43_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[3]_i_15_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_66_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_62_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_18_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_51_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_66_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_36_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_19_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_56_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_18_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_51_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_49_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_120_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_47_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_76_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_46_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_110_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_106_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_15_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_105_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_49_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_45_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_39_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_35_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_13_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_57_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_17_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_51_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_42_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_67_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_79_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_99_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_99
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_99_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_74_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_123_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[23]_i_123
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_123_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/p_0_in[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_13_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_51_n_0.  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result[15]_i_51
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_51_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/A[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net weight_IBUF[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net weight[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U2/mux_table_output[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net Concurrent_loop_for_pixels[0].U1/VecOut[1].  Did not re-place instance Concurrent_loop_for_pixels[0].U1/result_reg[1]
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/VecOut[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-24.626 | TNS=-927.784 |
+Phase 23 Critical Path Optimization | Checksum: debf8c29
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:32 . Memory (MB): peak = 2149.906 ; gain = 15.004 ; free physical = 120867 ; free virtual = 125805
+
+Phase 24 BRAM Enable Optimization
+Phase 24 BRAM Enable Optimization | Checksum: debf8c29
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:32 . Memory (MB): peak = 2149.906 ; gain = 15.004 ; free physical = 120867 ; free virtual = 125805
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2149.906 ; gain = 0.000 ; free physical = 120867 ; free virtual = 125805
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-24.626 | TNS=-927.784 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization       |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Fanout             |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           3  |  00:00:00  |
+|  Placement Based    |          0.010  |          0.320  |            0  |              0  |                     3  |           0  |           4  |  00:00:24  |
+|  Rewire             |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           3  |  00:00:00  |
+|  Critical Cell      |          0.000  |          0.000  |            0  |              0  |                     1  |           0  |           3  |  00:00:00  |
+|  DSP Register       |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+|  BRAM Register      |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+|  Shift Register     |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+|  Very High Fanout   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Pin       |          0.066  |          2.112  |            0  |              0  |                    13  |           0  |           1  |  00:00:00  |
+|  Critical Path      |          0.024  |          0.768  |            0  |              0  |                     2  |           0  |           0  |  00:00:04  |
+|  Total              |          0.100  |          3.200  |            0  |              0  |                    19  |           0  |          22  |  00:00:29  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Physical Synthesis Task | Checksum: d4ee8260
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:32 . Memory (MB): peak = 2149.906 ; gain = 15.004 ; free physical = 120867 ; free virtual = 125805
+INFO: [Common 17-83] Releasing license: Implementation
+661 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:01:18 ; elapsed = 00:00:32 . Memory (MB): peak = 2149.906 ; gain = 15.004 ; free physical = 120867 ; free virtual = 125805
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.32 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2149.906 ; gain = 0.000 ; free physical = 120863 ; free virtual = 125803
+INFO: [Common 17-1381] The checkpoint '/users/tareelou/neural_network_simul/neural_network_simul.runs/impl_5/top_level_physopt.dcp' has been generated.
+Command: route_design -tns_cleanup
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-1223] The version limit for your license is '2019.01' and will expire in -680 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 35647783 ConstDB: 0 ShapeSum: 51eed001 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: fba57a6d
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:01:26 . Memory (MB): peak = 2322.094 ; gain = 172.188 ; free physical = 121552 ; free virtual = 126493
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: fba57a6d
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:01:26 . Memory (MB): peak = 2322.094 ; gain = 172.188 ; free physical = 121553 ; free virtual = 126493
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: fba57a6d
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:01:26 . Memory (MB): peak = 2322.094 ; gain = 172.188 ; free physical = 121514 ; free virtual = 126454
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: fba57a6d
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:01:26 . Memory (MB): peak = 2322.094 ; gain = 172.188 ; free physical = 121514 ; free virtual = 126454
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 19ad39619
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:01:27 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121479 ; free virtual = 126419
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-23.593| TNS=-895.412| WHS=-0.585 | THS=-8.901 |
+
+Phase 2 Router Initialization | Checksum: 15df6e393
+
+Time (s): cpu = 00:01:50 ; elapsed = 00:01:28 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121489 ; free virtual = 126429
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1d5abd889
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:28 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121488 ; free virtual = 126428
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 33
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 1a8092de2
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:29 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121489 ; free virtual = 126429
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-27.772| TNS=-1044.994| WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.2 GlobIterForTiming
+
+Phase 4.1.2.1 Update Timing
+Phase 4.1.2.1 Update Timing | Checksum: 1a06aca9e
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:29 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121489 ; free virtual = 126429
+
+Phase 4.1.2.2 Fast Budgeting
+Phase 4.1.2.2 Fast Budgeting | Checksum: 1fec60d55
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:29 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121489 ; free virtual = 126429
+Phase 4.1.2 GlobIterForTiming | Checksum: 1c58ffb72
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:29 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121489 ; free virtual = 126429
+Phase 4.1 Global Iteration 0 | Checksum: 1c58ffb72
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:29 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121489 ; free virtual = 126429
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 181b2ea80
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:29 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121489 ; free virtual = 126429
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-28.207| TNS=-1058.914| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1240bd779
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:29 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121489 ; free virtual = 126429
+Phase 4 Rip-up And Reroute | Checksum: 1240bd779
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:29 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121489 ; free virtual = 126429
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 117798e95
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:29 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121489 ; free virtual = 126429
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-27.772| TNS=-1044.994| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+
+Phase 5.1.2 Update Timing
+Phase 5.1.2 Update Timing | Checksum: 14f694bec
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:29 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121489 ; free virtual = 126429
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-27.698| TNS=-1042.316| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+
+Phase 5.1.3 Update Timing
+Phase 5.1.3 Update Timing | Checksum: 181503ec0
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:29 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121489 ; free virtual = 126430
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-27.698| TNS=-1042.316| WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 181503ec0
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:29 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121489 ; free virtual = 126429
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 181503ec0
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:29 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121489 ; free virtual = 126430
+Phase 5 Delay and Skew Optimization | Checksum: 181503ec0
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:01:29 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121489 ; free virtual = 126430
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 201418df0
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:30 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121487 ; free virtual = 126427
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-27.698| TNS=-1048.891| WHS=0.122  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 201418df0
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:30 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121486 ; free virtual = 126427
+Phase 6 Post Hold Fix | Checksum: 201418df0
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:30 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121486 ; free virtual = 126426
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0418926 %
+  Global Horizontal Routing Utilization  = 0.0316941 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 37.8378%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 51.3514%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 44.1176%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 22.0588%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 1364ad086
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:30 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121476 ; free virtual = 126416
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1364ad086
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:30 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121475 ; free virtual = 126415
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: dfe96a80
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:30 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121486 ; free virtual = 126427
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-27.698| TNS=-1048.891| WHS=0.122  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: dfe96a80
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:30 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121486 ; free virtual = 126427
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:01:30 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121486 ; free virtual = 126427
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+678 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:59 ; elapsed = 00:01:31 . Memory (MB): peak = 2336.488 ; gain = 186.582 ; free physical = 121486 ; free virtual = 126427
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2336.488 ; gain = 0.000 ; free physical = 121485 ; free virtual = 126427
+INFO: [Common 17-1381] The checkpoint '/users/tareelou/neural_network_simul/neural_network_simul.runs/impl_5/top_level_routed.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /users/tareelou/neural_network_simul/neural_network_simul.runs/impl_5/top_level_drc_routed.rpt.
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:24]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /users/tareelou/neural_network_simul/neural_network_simul.runs/impl_5/top_level_methodology_drc_routed.rpt.
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:24]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:24]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Command: report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb -rpx top_level_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+691 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-1223] The version limit for your license is '2019.01' and will expire in -680 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode ( 100.0% nets are fully routed)
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2480.773 ; gain = 0.000 ; free physical = 121376 ; free virtual = 126319
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+Phase 1 Physical Synthesis Initialization | Checksum: 1f4953b19
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2480.773 ; gain = 0.000 ; free physical = 121369 ; free virtual = 126312
+WARNING: [Physopt 32-745] Physical Optimization has determined that the magnitude of the negative slack is too large and it is highly unlikely that slack will be improved. Post-Route Physical Optimization is most effective when WNS is above -0.5ns
+
+Phase 2 Critical Path Optimization
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.678 | TNS=-1048.383 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg_n_0_[26]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[26]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[27]_i_3_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_11_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_44_n_4. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.662 | TNS=-1048.197 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_21_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[3]_i_17_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_60_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[3]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_38_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[3]_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[3]_i_15_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_66_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_20_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.642 | TNS=-1047.547 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_61_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_55_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_18_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_51_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_66_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_20_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.606 | TNS=-1046.407 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_20_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.574 | TNS=-1045.357 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_61_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_56_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_18_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.571 | TNS=-1045.277 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_18_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_51_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_49_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.529 | TNS=-1043.935 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_49_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_120_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_47_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_114_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_46_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_45_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_99_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_15_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_33_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_14_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.443 | TNS=-1041.169 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_105_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_13_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_15_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.440 | TNS=-1041.072 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_39_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_15_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.427 | TNS=-1040.679 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_40_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.406 | TNS=-1039.997 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_15_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_62_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_13_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_57_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_12_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.390 | TNS=-1039.478 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_51_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_42_n_1. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.382 | TNS=-1039.212 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_49_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_42_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_70_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_79_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_99_n_0.  Re-placed instance Concurrent_loop_for_pixels[0].U1/result[23]_i_99
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_99_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.370 | TNS=-1038.852 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_99_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_74_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_123_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/p_0_in[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_13_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_51_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/A[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net weight_IBUF[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net weight[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U2/mux_table_output[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/VecOut[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg_n_0_[21]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net reset_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net reset. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg_n_0_[26]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result[26]. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.311 | TNS=-1038.767 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg_n_0_[27]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[27]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[27]_i_3_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_10_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.296 | TNS=-1038.464 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_11_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_21_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[3]_i_17_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_60_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.286 | TNS=-1038.154 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_61_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[3]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_38_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[3]_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_42_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.278 | TNS=-1037.891 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_43_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[3]_i_15_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_66_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_61_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_55_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.264 | TNS=-1037.440 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_56_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[7]_i_18_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_51_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_66_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_61_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_56_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[11]_i_18_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[11]_i_51_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_49_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_120_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_47_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_114_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.257 | TNS=-1037.206 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_115_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_46_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_45_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_99_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.242 | TNS=-1036.730 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_100_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_15_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_105_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_48_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.232 | TNS=-1036.409 | WHS=0.125 | THS=0.000 |
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_49_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_13_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[19]_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[19]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_15_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_62_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_13_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_57_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_49_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_42_n_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_70_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_79_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_99_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[23]_i_74_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[23]_i_123_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/p_0_in[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[3]_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg[15]_i_13_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[15]_i_51_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/A[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result[7]_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net weight_IBUF[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net weight[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U2/mux_table_output[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/VecOut[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net Concurrent_loop_for_pixels[0].U1/result_reg_n_0_[21]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net reset_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net reset. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-27.232 | TNS=-1036.409 | WHS=0.125 | THS=0.000 |
+Phase 2 Critical Path Optimization | Checksum: 21c3e3f49
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 2480.773 ; gain = 0.000 ; free physical = 121425 ; free virtual = 126367
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2480.773 ; gain = 0.000 ; free physical = 121425 ; free virtual = 126367
+INFO: [Physopt 32-669] Post Physical Optimization Timing Summary | WNS=-27.232 | TNS=-1036.409 | WHS=0.125 | THS=0.000 |
+Ending Physical Synthesis Task | Checksum: 19cbbbc53
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 2480.773 ; gain = 0.000 ; free physical = 121425 ; free virtual = 126367
+INFO: [Common 17-83] Releasing license: Implementation
+885 Infos, 2 Warnings, 1 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 2480.773 ; gain = 0.000 ; free physical = 121424 ; free virtual = 126367
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2480.773 ; gain = 0.000 ; free physical = 121423 ; free virtual = 126368
+INFO: [Common 17-1381] The checkpoint '/users/tareelou/neural_network_simul/neural_network_simul.runs/impl_5/top_level_postroute_physopt.dcp' has been generated.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 11 16:32:44 2020...

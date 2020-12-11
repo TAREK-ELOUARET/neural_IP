@@ -1,0 +1,19 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /apps/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto 2b972a67072748ed81f5dbd6456f1436 --debug typical --relax --mt 8 -L neural -L xil_defaultlib -L secureip --snapshot neuro_simul_behav xil_defaultlib.neuro_simul -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package neural.package_type
+Compiling architecture treefunction of entity xil_defaultlib.tree_reduction [\tree_reduction(size_width=16,nb...]
+Compiling architecture behavioral of entity xil_defaultlib.neuro_simul
+Built simulation snapshot neuro_simul_behav

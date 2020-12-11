@@ -1,0 +1,2029 @@
+
+*** Running vivado
+    with args -log top_level.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source top_level.tcl -notrace
+Command: synth_design -top top_level -part xc7z045ffg900-2 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z045'
+INFO: [Common 17-1223] The version limit for your license is '2019.01' and will expire in -680 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 29456 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1137.953 ; gain = 199.105 ; free physical = 123713 ; free virtual = 128643
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_level' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:22]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:26]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:33]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:34]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:35]
+WARNING: [Synth 8-614] signal 'flag_t_vector' is read in the process but is not in the sensitivity list [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'flag_t_vector_reg' and it is trimmed from '16' to '1' bits. [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'neuro_bio' (1#1) [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:26]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-3491] module 'neuro_bio' declared at '/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/neuro_bio.vhd:9' bound to instance 'U1' of component 'neuro_bio' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:69]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'tree_reduction' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/tree_reduction.vhd:25]
+	Parameter SIZE_WIDTH bound to: 16 - type: integer 
+	Parameter NBR_NEURON bound to: 500 - type: integer 
+	Parameter NBR_PIXELS bound to: 2500 - type: integer 
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/tree_reduction.vhd:26]
+WARNING: [Synth 8-614] signal 'mux_table_input' is read in the process but is not in the sensitivity list [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/tree_reduction.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'tree_reduction' (2#1) [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/tree_reduction.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'top_level' (3#1) [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/top_level.vhd:22]
+WARNING: [Synth 8-3331] design tree_reduction has unconnected port clk
+WARNING: [Synth 8-3331] design tree_reduction has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1202.422 ; gain = 263.574 ; free physical = 123646 ; free virtual = 128578
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1202.422 ; gain = 263.574 ; free physical = 123646 ; free virtual = 128578
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc]
+CRITICAL WARNING: [Vivado 12-2272] Clock names may not contain wildcard characters, as it confuses tcl. Skipping 'VecOut_mux[*]' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:2]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:24]
+Finished Parsing XDC File [/users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.52 . Memory (MB): peak = 1817.492 ; gain = 13.000 ; free physical = 123162 ; free virtual = 128094
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:55 ; elapsed = 00:00:47 . Memory (MB): peak = 1817.492 ; gain = 878.645 ; free physical = 123159 ; free virtual = 128091
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z045ffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:55 ; elapsed = 00:00:47 . Memory (MB): peak = 1817.492 ; gain = 878.645 ; free physical = 123159 ; free virtual = 128091
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:47 . Memory (MB): peak = 1817.492 ; gain = 878.645 ; free physical = 123159 ; free virtual = 128090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "flag_t" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "flag_t" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'mux_table_output_reg' [/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/tree_reduction.vhd:70]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:58 ; elapsed = 00:00:51 . Memory (MB): peak = 1817.492 ; gain = 878.645 ; free physical = 123158 ; free virtual = 128089
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[1].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[2].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[3].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[4].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[5].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[6].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[7].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[8].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[9].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[10].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[11].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[12].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[13].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[14].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[15].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[16].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[17].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[18].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[19].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[20].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[21].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[22].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[23].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[24].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[25].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[26].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[27].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[28].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[29].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[30].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[31].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[32].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[33].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[34].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[35].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[36].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[37].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[38].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[39].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[40].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[41].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[42].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[43].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[44].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[45].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[46].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[47].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[48].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[49].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[50].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[51].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[52].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[53].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[54].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[55].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[56].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[57].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[58].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[59].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[60].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[61].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[62].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[63].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[64].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[65].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[66].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[67].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[68].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[69].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[70].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[71].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[72].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[73].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[74].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[75].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[76].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[77].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[78].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[79].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[80].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[81].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[82].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[83].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[84].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[85].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[86].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[87].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[88].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[89].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[90].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[91].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[92].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[93].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[94].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[95].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[96].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[97].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[98].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[99].U1'
+INFO: [Synth 8-223] decloning instance 'Concurrent_loop_for_pixels[0].U1' (neuro_bio) to 'Concurrent_loop_for_pixels[100].U1'
+INFO: [Common 17-14] Message 'Synth 8-223' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |tree_reduction__GB0 |           1|     25272|
+|2     |tree_reduction__GB1 |           1|     13432|
+|3     |tree_reduction__GB2 |           1|     13208|
+|4     |neuro_bio           |           1|      5159|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     31 Bit       Adders := 2     
+	   3 Input     17 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               31 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   3 Input     31 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 499   
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module tree_reduction 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 499   
+Module neuro_bio 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     31 Bit       Adders := 2     
+	   3 Input     17 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               31 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   3 Input     31 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1090 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[30]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[29]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[28]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[27]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[26]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[25]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[24]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[23]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[22]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[21]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[20]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[19]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[18]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[17]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[16]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[15]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[14]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[13]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[12]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[11]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[10]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[9]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[8]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[7]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[6]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[5]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[4]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[3]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[2]) is unused and will be removed from module neuro_bio.
+WARNING: [Synth 8-3332] Sequential element (flag_t_reg[1]) is unused and will be removed from module neuro_bio.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:01 . Memory (MB): peak = 1817.492 ; gain = 878.645 ; free physical = 123154 ; free virtual = 128086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |tree_reduction__GB1 |           1|        16|
+|2     |neuro_bio           |           1|       984|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:13 . Memory (MB): peak = 1817.492 ; gain = 878.645 ; free physical = 123154 ; free virtual = 128086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |tree_reduction__GB1 |           1|        16|
+|2     |neuro_bio           |           1|       984|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:21 ; elapsed = 00:01:14 . Memory (MB): peak = 1817.492 ; gain = 878.645 ; free physical = 123149 ; free virtual = 128081
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:01:15 . Memory (MB): peak = 1817.492 ; gain = 878.645 ; free physical = 123154 ; free virtual = 128086
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:22 ; elapsed = 00:01:15 . Memory (MB): peak = 1817.492 ; gain = 878.645 ; free physical = 123154 ; free virtual = 128086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:01:15 . Memory (MB): peak = 1817.492 ; gain = 878.645 ; free physical = 123154 ; free virtual = 128086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   129|
+|3     |LUT1   |   109|
+|4     |LUT2   |   290|
+|5     |LUT3   |    46|
+|6     |LUT4   |    66|
+|7     |LUT5   |    39|
+|8     |LUT6   |    11|
+|9     |XORCY  |    23|
+|10    |FDCE   |    32|
+|11    |FDRE   |    32|
+|12    |LD     |    16|
+|13    |IBUF   |    34|
+|14    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+---------------+------+
+|      |Instance                             |Module         |Cells |
++------+-------------------------------------+---------------+------+
+|1     |top                                  |               |   844|
+|2     |  U2                                 |tree_reduction |    16|
+|3     |  \Concurrent_loop_for_pixels[0].U1  |neuro_bio      |   777|
++------+-------------------------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:22 ; elapsed = 00:01:15 . Memory (MB): peak = 1817.492 ; gain = 878.645 ; free physical = 123154 ; free virtual = 128086
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1817.492 ; gain = 126.469 ; free physical = 123154 ; free virtual = 128086
+Synthesis Optimization Complete : Time (s): cpu = 00:01:22 ; elapsed = 00:01:15 . Memory (MB): peak = 1817.492 ; gain = 878.645 ; free physical = 123154 ; free virtual = 128086
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 202 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 39 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 23 instances
+  LD => LDCE: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+231 Infos, 40 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:22 ; elapsed = 00:01:14 . Memory (MB): peak = 1817.492 ; gain = 811.141 ; free physical = 123156 ; free virtual = 128088
+INFO: [Common 17-1381] The checkpoint '/users/tareelou/neural_network_simul/neural_network_simul.runs/synth_1/top_level.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.23 . Memory (MB): peak = 1841.504 ; gain = 0.000 ; free physical = 123153 ; free virtual = 128085
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 11 16:29:14 2020...

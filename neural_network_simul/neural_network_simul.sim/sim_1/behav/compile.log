@@ -1,0 +1,5 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/package_type.vhd" into library neural
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_simul/neural_network_simul.srcs/sources_1/imports/neural_network/tree_reduction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tree_reduction
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_simul/neural_network_simul.srcs/sim_1/imports/neural_network/neuro_simul.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_simul
