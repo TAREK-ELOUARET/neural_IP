@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_5" LaunchPart="xc7z045ffg900-2" LaunchTime="1607700469">
+<GenRun Id="impl_5" LaunchPart="xc7z045ffg900-2" LaunchTime="1607801365">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="top_level.drc"/>
   <File Type="BG-BGN" Name="top_level.bgn"/>
@@ -23,43 +23,43 @@
   <File Type="ROUTE-TIMINGSUMMARY" Name="top_level_timing_summary_routed.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="top_level_route_status.pb"/>
   <File Type="ROUTE-STATUS" Name="top_level_route_status.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="top_level_power_routed.rpx"/>
-  <File Type="ROUTE-PWR-SUM" Name="top_level_power_summary_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="top_level_power_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="top_level_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="top_level_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="top_level_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-RPX" Name="top_level_drc_routed.rpx"/>
-  <File Type="ROUTE-DRC-PB" Name="top_level_drc_routed.pb"/>
-  <File Type="ROUTE-DRC" Name="top_level_drc_routed.rpt"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="top_level_routed_bb.dcp"/>
-  <File Type="ROUTE-DCP" Name="top_level_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="top_level_routed_error.dcp"/>
-  <File Type="PHYSOPT-TIMING" Name="top_level_timing_summary_physopted.rpt"/>
-  <File Type="PHYSOPT-DRC" Name="top_level_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="top_level_physopt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="top_level_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="RDI-RDI" Name="top_level.vdi"/>
-  <File Type="PLACE-TIMING" Name="top_level_timing_summary_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="top_level_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="top_level_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-CTRL" Name="top_level_control_sets_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="top_level_utilization_placed.pb"/>
-  <File Type="PLACE-UTIL" Name="top_level_utilization_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="top_level_clock_utilization_placed.rpt"/>
   <File Type="PLACE-IO" Name="top_level_io_placed.rpt"/>
-  <File Type="PLACE-DCP" Name="top_level_placed.dcp"/>
   <File Type="PWROPT-TIMING" Name="top_level_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="top_level_placed.dcp"/>
+  <File Type="PLACE-UTIL-PB" Name="top_level_utilization_placed.pb"/>
+  <File Type="PHYSOPT-TIMING" Name="top_level_timing_summary_physopted.rpt"/>
   <File Type="PWROPT-DRC" Name="top_level_drc_pwropted.rpt"/>
   <File Type="PWROPT-DCP" Name="top_level_pwropt.dcp"/>
+  <File Type="PLACE-UTIL" Name="top_level_utilization_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="top_level_timing_summary_postplace_pwropted.rpt"/>
   <File Type="OPT-TIMING" Name="top_level_timing_summary_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="top_level.hwdef"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="top_level_methodology_drc_opted.rpt"/>
+  <File Type="PLACE-CLK" Name="top_level_clock_utilization_placed.rpt"/>
+  <File Type="RDI-RDI" Name="top_level.vdi"/>
+  <File Type="PLACE-TIMING" Name="top_level_timing_summary_placed.rpt"/>
+  <File Type="INIT-TIMING" Name="top_level_timing_summary_init.rpt"/>
   <File Type="OPT-DRC" Name="top_level_drc_opted.rpt"/>
   <File Type="OPT-DCP" Name="top_level_opt.dcp"/>
-  <File Type="INIT-TIMING" Name="top_level_timing_summary_init.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="top_level_postplace_pwropt.dcp"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="top_level_methodology_drc_opted.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="top_level_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="top_level_incremental_reuse_placed.rpt"/>
   <File Type="PA-TCL" Name="top_level.tcl"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="top_level_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="top_level_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="top_level_drc_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="top_level_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="top_level_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="top_level_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="top_level_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="top_level_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="top_level_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="top_level_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="top_level_drc_routed.rpx"/>
+  <File Type="ROUTE-PWR" Name="top_level_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="top_level_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="top_level_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="top_level_power_routed.rpx"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/neural_network/package_type.vhd">
@@ -161,9 +161,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Flow_RunPostRoutePhysOpt" Flow="Vivado Implementation 2016">
-      <Desc>Similar to the Implementation Run Defaults, but enables the physical optimization step (phys_opt_design) before and after routing.</Desc>
-    </StratHandle>
+    <StratHandle Name="Flow_RunPostRoutePhysOpt" Flow="Vivado Implementation 2016"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

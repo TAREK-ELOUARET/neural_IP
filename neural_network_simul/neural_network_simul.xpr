@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="/users/tareelou/neural_network_simul/neural_network_simul.xpr">
+<Project Version="7" Minor="17" Path="/home/elliot/git_neural/neural_IP/neural_network_simul/neural_network_simul.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="2b972a67072748ed81f5dbd6456f1436"/>
@@ -211,9 +211,7 @@
     </Run>
     <Run Id="impl_3" Type="Ft2:EntireDesign" Part="xc7z045ffg900-2" ConstrsSet="constrs_1" Description="Fastest possible runtime, all timing-driven behavior disabled. Useful for utilization estimation." State="current" Dir="$PRUNDIR/impl_3" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Flow_Quick" Flow="Vivado Implementation 2016">
-          <Desc>Fastest possible runtime, all timing-driven behavior disabled. Useful for utilization estimation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Flow_Quick" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design">
           <Option Id="Directive">4</Option>
@@ -235,9 +233,7 @@
     </Run>
     <Run Id="impl_4" Type="Ft2:EntireDesign" Part="xc7z045ffg900-2" ConstrsSet="constrs_1" Description="Each implementation step trades design performance for better runtime. Physical optimization (phys_opt_design) is disabled." Dir="$PRUNDIR/impl_4" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Flow_RuntimeOptimized" Flow="Vivado Implementation 2016">
-          <Desc>Each implementation step trades design performance for better runtime. Physical optimization (phys_opt_design) is disabled.</Desc>
-        </StratHandle>
+        <StratHandle Name="Flow_RuntimeOptimized" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design">
           <Option Id="Directive">4</Option>
@@ -259,9 +255,7 @@
     </Run>
     <Run Id="impl_5" Type="Ft2:EntireDesign" Part="xc7z045ffg900-2" ConstrsSet="constrs_1" Description="Similar to the Implementation Run Defaults, but enables the physical optimization step (phys_opt_design) before and after routing." Dir="$PRUNDIR/impl_5" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Flow_RunPostRoutePhysOpt" Flow="Vivado Implementation 2016">
-          <Desc>Similar to the Implementation Run Defaults, but enables the physical optimization step (phys_opt_design) before and after routing.</Desc>
-        </StratHandle>
+        <StratHandle Name="Flow_RunPostRoutePhysOpt" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -281,9 +275,7 @@
     </Run>
     <Run Id="impl_6" Type="Ft2:EntireDesign" Part="xc7z045ffg900-2" ConstrsSet="constrs_1" Description="Similar to Peformance_Explore, but enables the physical optimization step (phys_opt_design) with the Explore directive after routing." Dir="$PRUNDIR/impl_6" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Performance_ExplorePostRoutePhysOpt" Flow="Vivado Implementation 2016">
-          <Desc>Similar to Peformance_Explore, but enables the physical optimization step (phys_opt_design) with the Explore directive after routing.</Desc>
-        </StratHandle>
+        <StratHandle Name="Performance_ExplorePostRoutePhysOpt" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design">
           <Option Id="Directive">0</Option>

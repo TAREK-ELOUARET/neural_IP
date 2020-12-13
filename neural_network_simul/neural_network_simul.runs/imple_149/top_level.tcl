@@ -53,12 +53,12 @@ set rc [catch {
   set_property board_part xilinx.com:zc706:part0:1.3 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /users/tareelou/neural_network_simul/neural_network_simul.cache/wt [current_project]
-  set_property parent.project_path /users/tareelou/neural_network_simul/neural_network_simul.xpr [current_project]
-  set_property ip_output_repo /users/tareelou/neural_network_simul/neural_network_simul.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/elliot/git_neural/neural_IP/neural_network_simul/neural_network_simul.cache/wt [current_project]
+  set_property parent.project_path /home/elliot/git_neural/neural_IP/neural_network_simul/neural_network_simul.xpr [current_project]
+  set_property ip_output_repo /home/elliot/git_neural/neural_IP/neural_network_simul/neural_network_simul.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet /users/tareelou/neural_network_simul/neural_network_simul.runs/synth_7/top_level.dcp
-  read_xdc /users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc
+  add_files -quiet /home/elliot/git_neural/neural_IP/neural_network_simul/neural_network_simul.runs/synth_5/top_level.dcp
+  read_xdc /home/elliot/git_neural/neural_IP/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc
   link_design -top top_level -part xc7z045ffg900-2
   write_hwdef -file top_level.hwdef
   close_msg_db -file init_design.pb
@@ -75,7 +75,7 @@ start_step opt_design
 set ACTIVE_STEP opt_design
 set rc [catch {
   create_msg_db opt_design.pb
-  opt_design -directive Explore
+  opt_design -directive ExploreSequentialArea
   write_checkpoint -force top_level_opt.dcp
   catch { report_drc -file top_level_drc_opted.rpt }
   close_msg_db -file opt_design.pb
@@ -93,7 +93,7 @@ set ACTIVE_STEP place_design
 set rc [catch {
   create_msg_db place_design.pb
   implement_debug_core 
-  place_design -directive Explore
+  place_design 
   write_checkpoint -force top_level_placed.dcp
   catch { report_io -file top_level_io_placed.rpt }
   catch { report_utilization -file top_level_utilization_placed.rpt -pb top_level_utilization_placed.pb }
@@ -108,32 +108,15 @@ if {$rc} {
   unset ACTIVE_STEP 
 }
 
-start_step phys_opt_design
-set ACTIVE_STEP phys_opt_design
-set rc [catch {
-  create_msg_db phys_opt_design.pb
-  phys_opt_design -directive Explore
-  write_checkpoint -force top_level_physopt.dcp
-  close_msg_db -file phys_opt_design.pb
-} RESULT]
-if {$rc} {
-  step_failed phys_opt_design
-  return -code error $RESULT
-} else {
-  end_step phys_opt_design
-  unset ACTIVE_STEP 
-}
-
-  set_msg_config -source 4 -id {Route 35-39} -severity "critical warning" -new_severity warning
 start_step route_design
 set ACTIVE_STEP route_design
 set rc [catch {
   create_msg_db route_design.pb
-  route_design -directive Explore -tns_cleanup
+  route_design 
   write_checkpoint -force top_level_routed.dcp
   catch { report_drc -file top_level_drc_routed.rpt -pb top_level_drc_routed.pb -rpx top_level_drc_routed.rpx }
   catch { report_methodology -file top_level_methodology_drc_routed.rpt -rpx top_level_methodology_drc_routed.rpx }
-  catch { report_timing_summary -max_paths 10 -file top_level_timing_summary_routed.rpt -rpx top_level_timing_summary_routed.rpx }
+  catch { report_timing_summary -warn_on_violation -max_paths 10 -file top_level_timing_summary_routed.rpt -rpx top_level_timing_summary_routed.rpx }
   catch { report_power -file top_level_power_routed.rpt -pb top_level_power_summary_routed.pb -rpx top_level_power_routed.rpx }
   catch { report_route_status -file top_level_route_status.rpt -pb top_level_route_status.pb }
   catch { report_clock_utilization -file top_level_clock_utilization_routed.rpt }
@@ -145,23 +128,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-  unset ACTIVE_STEP 
-}
-
-start_step post_route_phys_opt_design
-set ACTIVE_STEP post_route_phys_opt_design
-set rc [catch {
-  create_msg_db post_route_phys_opt_design.pb
-  phys_opt_design -directive Explore
-  write_checkpoint -force top_level_postroute_physopt.dcp
-  catch { report_timing_summary -warn_on_violation -max_paths 10 -file top_level_timing_summary_postroute_physopted.rpt -rpx top_level_timing_summary_postroute_physopted.rpx }
-  close_msg_db -file post_route_phys_opt_design.pb
-} RESULT]
-if {$rc} {
-  step_failed post_route_phys_opt_design
-  return -code error $RESULT
-} else {
-  end_step post_route_phys_opt_design
   unset ACTIVE_STEP 
 }
 

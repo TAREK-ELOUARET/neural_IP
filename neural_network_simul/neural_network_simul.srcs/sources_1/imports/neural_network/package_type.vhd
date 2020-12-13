@@ -9,7 +9,7 @@ use ieee.numeric_std.all;
 package package_type is
 
 constant    SIZE_WIDTH_T :natural := 16;
-constant    NBR_NEURON_T :natural := 500;
+constant    NBR_NEURON_T :natural := 10000;
 constant    NBR_PIXELS_T :natural := 2500;
 type table is array(0 to NBR_NEURON_T -1) of std_logic_vector(SIZE_WIDTH_T -1 downto 0);
 

@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-| Date         : Fri Dec 11 16:31:45 2020
-| Host         : abraracoucix.etis-lab.fr running 64-bit Ubuntu 18.04.5 LTS
+| Date         : Sat Dec 12 22:10:29 2020
+| Host         : elliot running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_methodology -file top_level_methodology_drc_routed.rpt -rpx top_level_methodology_drc_routed.rpx
 | Design       : top_level
 | Device       : xc7z045ffg900-2
@@ -23,334 +23,265 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 64
+             Violations found: 50
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| TIMING-16 | Warning  | Large setup violation         | 48         |
-| TIMING-18 | Warning  | Missing input or output delay | 16         |
+| CLKC-2    | Warning  | Clocking latency set by user  | 1          |
+| TIMING-18 | Warning  | Missing input or output delay | 33         |
+| TIMING-20 | Warning  | Non-clocked latch             | 16         |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
-TIMING-16#1 Warning
-Large setup violation  
-There is a large setup violation of -10.044 ns between U2/mux_table_output_reg[15]/D (clocked by Concurrent_loop_for_pixels[0].U1/flag) and VecOut_mux[15] (clocked by VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#2 Warning
-Large setup violation  
-There is a large setup violation of -10.122 ns between U2/mux_table_output_reg[13]/D (clocked by Concurrent_loop_for_pixels[0].U1/flag) and VecOut_mux[13] (clocked by VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#3 Warning
-Large setup violation  
-There is a large setup violation of -10.170 ns between U2/mux_table_output_reg[12]/D (clocked by Concurrent_loop_for_pixels[0].U1/flag) and VecOut_mux[12] (clocked by VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#4 Warning
-Large setup violation  
-There is a large setup violation of -10.183 ns between U2/mux_table_output_reg[14]/D (clocked by Concurrent_loop_for_pixels[0].U1/flag) and VecOut_mux[14] (clocked by VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#5 Warning
-Large setup violation  
-There is a large setup violation of -10.208 ns between U2/mux_table_output_reg[10]/D (clocked by Concurrent_loop_for_pixels[0].U1/flag) and VecOut_mux[10] (clocked by VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#6 Warning
-Large setup violation  
-There is a large setup violation of -10.250 ns between U2/mux_table_output_reg[7]/D (clocked by Concurrent_loop_for_pixels[0].U1/flag) and VecOut_mux[7] (clocked by VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#7 Warning
-Large setup violation  
-There is a large setup violation of -10.274 ns between U2/mux_table_output_reg[9]/D (clocked by Concurrent_loop_for_pixels[0].U1/flag) and VecOut_mux[9] (clocked by VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#8 Warning
-Large setup violation  
-There is a large setup violation of -10.279 ns between U2/mux_table_output_reg[11]/D (clocked by Concurrent_loop_for_pixels[0].U1/flag) and VecOut_mux[11] (clocked by VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#9 Warning
-Large setup violation  
-There is a large setup violation of -10.335 ns between U2/mux_table_output_reg[8]/D (clocked by Concurrent_loop_for_pixels[0].U1/flag) and VecOut_mux[8] (clocked by VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#10 Warning
-Large setup violation  
-There is a large setup violation of -10.371 ns between U2/mux_table_output_reg[6]/D (clocked by Concurrent_loop_for_pixels[0].U1/flag) and VecOut_mux[6] (clocked by VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#11 Warning
-Large setup violation  
-There is a large setup violation of -10.498 ns between U2/mux_table_output_reg[5]/D (clocked by Concurrent_loop_for_pixels[0].U1/flag) and VecOut_mux[5] (clocked by VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#12 Warning
-Large setup violation  
-There is a large setup violation of -10.550 ns between U2/mux_table_output_reg[3]/D (clocked by Concurrent_loop_for_pixels[0].U1/flag) and VecOut_mux[3] (clocked by VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#13 Warning
-Large setup violation  
-There is a large setup violation of -10.589 ns between U2/mux_table_output_reg[1]/D (clocked by Concurrent_loop_for_pixels[0].U1/flag) and VecOut_mux[1] (clocked by VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#14 Warning
-Large setup violation  
-There is a large setup violation of -10.600 ns between U2/mux_table_output_reg[4]/D (clocked by Concurrent_loop_for_pixels[0].U1/flag) and VecOut_mux[4] (clocked by VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#15 Warning
-Large setup violation  
-There is a large setup violation of -10.608 ns between U2/mux_table_output_reg[0]/D (clocked by Concurrent_loop_for_pixels[0].U1/flag) and VecOut_mux[0] (clocked by VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#16 Warning
-Large setup violation  
-There is a large setup violation of -10.654 ns between U2/mux_table_output_reg[2]/D (clocked by Concurrent_loop_for_pixels[0].U1/flag) and VecOut_mux[2] (clocked by VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#17 Warning
-Large setup violation  
-There is a large setup violation of -26.311 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[0]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#18 Warning
-Large setup violation  
-There is a large setup violation of -26.933 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[1]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#19 Warning
-Large setup violation  
-There is a large setup violation of -27.007 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[3]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#20 Warning
-Large setup violation  
-There is a large setup violation of -27.039 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[2]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#21 Warning
-Large setup violation  
-There is a large setup violation of -27.160 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[4]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#22 Warning
-Large setup violation  
-There is a large setup violation of -27.188 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[7]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#23 Warning
-Large setup violation  
-There is a large setup violation of -27.207 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[6]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#24 Warning
-Large setup violation  
-There is a large setup violation of -27.302 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[11]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#25 Warning
-Large setup violation  
-There is a large setup violation of -27.307 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[5]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#26 Warning
-Large setup violation  
-There is a large setup violation of -27.354 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[16]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#27 Warning
-Large setup violation  
-There is a large setup violation of -27.364 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[8]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#28 Warning
-Large setup violation  
-There is a large setup violation of -27.377 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[12]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#29 Warning
-Large setup violation  
-There is a large setup violation of -27.388 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[13]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#30 Warning
-Large setup violation  
-There is a large setup violation of -27.431 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[9]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#31 Warning
-Large setup violation  
-There is a large setup violation of -27.438 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[10]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#32 Warning
-Large setup violation  
-There is a large setup violation of -27.441 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[18]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#33 Warning
-Large setup violation  
-There is a large setup violation of -27.451 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[15]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#34 Warning
-Large setup violation  
-There is a large setup violation of -27.457 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[14]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#35 Warning
-Large setup violation  
-There is a large setup violation of -27.467 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[23]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#36 Warning
-Large setup violation  
-There is a large setup violation of -27.498 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[19]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#37 Warning
-Large setup violation  
-There is a large setup violation of -27.511 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[24]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#38 Warning
-Large setup violation  
-There is a large setup violation of -27.526 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[28]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#39 Warning
-Large setup violation  
-There is a large setup violation of -27.538 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[20]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#40 Warning
-Large setup violation  
-There is a large setup violation of -27.561 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[17]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#41 Warning
-Large setup violation  
-There is a large setup violation of -27.570 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[21]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#42 Warning
-Large setup violation  
-There is a large setup violation of -27.572 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[31]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#43 Warning
-Large setup violation  
-There is a large setup violation of -27.586 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[29]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#44 Warning
-Large setup violation  
-There is a large setup violation of -27.588 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[22]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#45 Warning
-Large setup violation  
-There is a large setup violation of -27.605 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[30]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#46 Warning
-Large setup violation  
-There is a large setup violation of -27.620 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[25]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#47 Warning
-Large setup violation  
-There is a large setup violation of -27.627 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[27]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#48 Warning
-Large setup violation  
-There is a large setup violation of -27.687 ns between weight[9] (clocked by clk) and Concurrent_loop_for_pixels[0].U1/result_reg[26]/D (clocked by clk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+CLKC-2#1 Warning
+Clocking latency set by user  
+Clock clk must not have the clock latency set when it is not propagated.
 Related violations: <none>
 
 TIMING-18#1 Warning
 Missing input or output delay  
-An output delay is missing on VecOut_mux[0] relative to clock(s) VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag_1 
+An input delay is missing on pixel[0] relative to clock(s) clk 
 Related violations: <none>
 
 TIMING-18#2 Warning
 Missing input or output delay  
-An output delay is missing on VecOut_mux[10] relative to clock(s) VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag_1 
+An input delay is missing on pixel[10] relative to clock(s) clk 
 Related violations: <none>
 
 TIMING-18#3 Warning
 Missing input or output delay  
-An output delay is missing on VecOut_mux[11] relative to clock(s) VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag_1 
+An input delay is missing on pixel[11] relative to clock(s) clk 
 Related violations: <none>
 
 TIMING-18#4 Warning
 Missing input or output delay  
-An output delay is missing on VecOut_mux[12] relative to clock(s) VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag_1 
+An input delay is missing on pixel[12] relative to clock(s) clk 
 Related violations: <none>
 
 TIMING-18#5 Warning
 Missing input or output delay  
-An output delay is missing on VecOut_mux[13] relative to clock(s) VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag_1 
+An input delay is missing on pixel[13] relative to clock(s) clk 
 Related violations: <none>
 
 TIMING-18#6 Warning
 Missing input or output delay  
-An output delay is missing on VecOut_mux[14] relative to clock(s) VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag_1 
+An input delay is missing on pixel[14] relative to clock(s) clk 
 Related violations: <none>
 
 TIMING-18#7 Warning
 Missing input or output delay  
-An output delay is missing on VecOut_mux[15] relative to clock(s) VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag_1 
+An input delay is missing on pixel[15] relative to clock(s) clk 
 Related violations: <none>
 
 TIMING-18#8 Warning
 Missing input or output delay  
-An output delay is missing on VecOut_mux[1] relative to clock(s) VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag_1 
+An input delay is missing on pixel[1] relative to clock(s) clk 
 Related violations: <none>
 
 TIMING-18#9 Warning
 Missing input or output delay  
-An output delay is missing on VecOut_mux[2] relative to clock(s) VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag_1 
+An input delay is missing on pixel[2] relative to clock(s) clk 
 Related violations: <none>
 
 TIMING-18#10 Warning
 Missing input or output delay  
-An output delay is missing on VecOut_mux[3] relative to clock(s) VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag_1 
+An input delay is missing on pixel[3] relative to clock(s) clk 
 Related violations: <none>
 
 TIMING-18#11 Warning
 Missing input or output delay  
-An output delay is missing on VecOut_mux[4] relative to clock(s) VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag_1 
+An input delay is missing on pixel[4] relative to clock(s) clk 
 Related violations: <none>
 
 TIMING-18#12 Warning
 Missing input or output delay  
-An output delay is missing on VecOut_mux[5] relative to clock(s) VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag_1 
+An input delay is missing on pixel[5] relative to clock(s) clk 
 Related violations: <none>
 
 TIMING-18#13 Warning
 Missing input or output delay  
-An output delay is missing on VecOut_mux[6] relative to clock(s) VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag_1 
+An input delay is missing on pixel[6] relative to clock(s) clk 
 Related violations: <none>
 
 TIMING-18#14 Warning
 Missing input or output delay  
-An output delay is missing on VecOut_mux[7] relative to clock(s) VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag_1 
+An input delay is missing on pixel[7] relative to clock(s) clk 
 Related violations: <none>
 
 TIMING-18#15 Warning
 Missing input or output delay  
-An output delay is missing on VecOut_mux[8] relative to clock(s) VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag_1 
+An input delay is missing on pixel[8] relative to clock(s) clk 
 Related violations: <none>
 
 TIMING-18#16 Warning
 Missing input or output delay  
-An output delay is missing on VecOut_mux[9] relative to clock(s) VIRTUAL_Concurrent_loop_for_pixels[0].U1/flag_1 
+An input delay is missing on pixel[9] relative to clock(s) clk 
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An input delay is missing on reset relative to clock(s) clk 
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An input delay is missing on weight[0] relative to clock(s) clk 
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An input delay is missing on weight[10] relative to clock(s) clk 
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An input delay is missing on weight[11] relative to clock(s) clk 
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An input delay is missing on weight[12] relative to clock(s) clk 
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An input delay is missing on weight[13] relative to clock(s) clk 
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An input delay is missing on weight[14] relative to clock(s) clk 
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An input delay is missing on weight[15] relative to clock(s) clk 
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An input delay is missing on weight[1] relative to clock(s) clk 
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An input delay is missing on weight[2] relative to clock(s) clk 
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An input delay is missing on weight[3] relative to clock(s) clk 
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An input delay is missing on weight[4] relative to clock(s) clk 
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An input delay is missing on weight[5] relative to clock(s) clk 
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An input delay is missing on weight[6] relative to clock(s) clk 
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An input delay is missing on weight[7] relative to clock(s) clk 
+Related violations: <none>
+
+TIMING-18#32 Warning
+Missing input or output delay  
+An input delay is missing on weight[8] relative to clock(s) clk 
+Related violations: <none>
+
+TIMING-18#33 Warning
+Missing input or output delay  
+An input delay is missing on weight[9] relative to clock(s) clk 
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch U2/mux_table_output_reg[0] cannot be properly analyzed as its control pin U2/mux_table_output_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch U2/mux_table_output_reg[10] cannot be properly analyzed as its control pin U2/mux_table_output_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch U2/mux_table_output_reg[11] cannot be properly analyzed as its control pin U2/mux_table_output_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch U2/mux_table_output_reg[12] cannot be properly analyzed as its control pin U2/mux_table_output_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch U2/mux_table_output_reg[13] cannot be properly analyzed as its control pin U2/mux_table_output_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch U2/mux_table_output_reg[14] cannot be properly analyzed as its control pin U2/mux_table_output_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch U2/mux_table_output_reg[15] cannot be properly analyzed as its control pin U2/mux_table_output_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch U2/mux_table_output_reg[1] cannot be properly analyzed as its control pin U2/mux_table_output_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch U2/mux_table_output_reg[2] cannot be properly analyzed as its control pin U2/mux_table_output_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch U2/mux_table_output_reg[3] cannot be properly analyzed as its control pin U2/mux_table_output_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch U2/mux_table_output_reg[4] cannot be properly analyzed as its control pin U2/mux_table_output_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch U2/mux_table_output_reg[5] cannot be properly analyzed as its control pin U2/mux_table_output_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch U2/mux_table_output_reg[6] cannot be properly analyzed as its control pin U2/mux_table_output_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch U2/mux_table_output_reg[7] cannot be properly analyzed as its control pin U2/mux_table_output_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch U2/mux_table_output_reg[8] cannot be properly analyzed as its control pin U2/mux_table_output_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch U2/mux_table_output_reg[9] cannot be properly analyzed as its control pin U2/mux_table_output_reg[9]/G is not reached by a timing clock
 Related violations: <none>
 
 

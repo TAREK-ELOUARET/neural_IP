@@ -42,7 +42,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
@@ -54,12 +53,12 @@ set rc [catch {
   set_property board_part xilinx.com:zc706:part0:1.3 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /users/tareelou/neural_network_simul/neural_network_simul.cache/wt [current_project]
-  set_property parent.project_path /users/tareelou/neural_network_simul/neural_network_simul.xpr [current_project]
-  set_property ip_output_repo /users/tareelou/neural_network_simul/neural_network_simul.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/elliot/git_neural/neural_IP/neural_network_simul/neural_network_simul.cache/wt [current_project]
+  set_property parent.project_path /home/elliot/git_neural/neural_IP/neural_network_simul/neural_network_simul.xpr [current_project]
+  set_property ip_output_repo /home/elliot/git_neural/neural_IP/neural_network_simul/neural_network_simul.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet /users/tareelou/neural_network_simul/neural_network_simul.runs/synth_1/top_level.dcp
-  read_xdc /users/tareelou/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc
+  add_files -quiet /home/elliot/git_neural/neural_IP/neural_network_simul/neural_network_simul.runs/synth_1/top_level.dcp
+  read_xdc /home/elliot/git_neural/neural_IP/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc
   link_design -top top_level -part xc7z045ffg900-2
   write_hwdef -file top_level.hwdef
   close_msg_db -file init_design.pb
