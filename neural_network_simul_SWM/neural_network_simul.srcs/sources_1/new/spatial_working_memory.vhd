@@ -15,11 +15,10 @@ entity spatial_working_memory is
   );
   port (
 	clk 		: in std_logic;
-	reset       : in std_logic;
 	
   	flag_signature         : in std_logic; -- means that the signature tree has well been sorted
-  	flag_learning         : in std_logic; -- means the signature_weights are invited to learn and adjust their values
-  	flag_reset_image         : in std_logic; -- means that the signature tree has well been sorted
+  	flag_learning          : in std_logic; -- means the signature_weights are invited to learn and adjust their values
+  	flag_reset_image       : in std_logic; -- means that the signature tree has well been sorted
   	
   	signature_neurons      : in table;
   	signature_weight       : in table; 
@@ -43,7 +42,7 @@ architecture neuronFunction of spatial_working_memory is
                       variable Azimuth_neuron_t : table;
 
     begin
-            --Azimuth_neuron <= A;
+    
             for j in table'LEFT to table'RIGHT - 1 loop 
                 for i in table'LEFT to table'RIGHT - 1 - j loop 
                     if Azimuth_neuron(i) <= Azimuth_neuron(i + 1) then
@@ -60,7 +59,7 @@ architecture neuronFunction of spatial_working_memory is
 begin
 
 	
-	SWM:process (clk, reset)
+	SWM:process (clk)
 	variable Azimuth_neuron_t :     table;
 	variable l :     integer;
 	
@@ -69,14 +68,15 @@ begin
 	   if flag_signature = '1' then
             if rising_edge(clk) then 
 		      if flag_reset_image = '1' then
-		          for j in 0 to NUMBER_OF_SIGNATURE_NEURONS - 1 loop 
-                        for i in 0 to NUMBER_OF_AZIMUTH_NEURONS -1 loop
+		          for i in 0 to NUMBER_OF_SIGNATURE_NEURONS - 1 loop 
+		                l := 0;
+                        for j in 0 to NUMBER_OF_AZIMUTH_NEURONS -1 loop
                             
                             for k in l to l+2 loop
                                 Azimuth_neuron_t(k) := azimuth_neurons(k) * azimuth_weight(k);
                             end loop;
                                                 
-		                    SWM_neurons_t(i,j) := (signature_neurons(j)*signature_weight(j)) * (maximum_set_azimuth(Azimuth_neuron_t));
+		                    SWM_neurons_t(i,j) := (signature_neurons(j) * signature_weight(j)) * (maximum_set_azimuth(Azimuth_neuron_t));
 		                    l := l+3;
 		          end loop;
 		          end loop;
