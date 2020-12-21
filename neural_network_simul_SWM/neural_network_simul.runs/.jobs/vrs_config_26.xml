@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="synth_1" LaunchDir="/users/tareelou/neural_network_simul/neural_network_simul.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_0" LaunchDir="/users/tareelou/neural_network_simul/neural_network_simul.runs/synth_0" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_2" LaunchDir="/users/tareelou/neural_network_simul/neural_network_simul.runs/synth_2" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_3" LaunchDir="/users/tareelou/neural_network_simul/neural_network_simul.runs/synth_3" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_4" LaunchDir="/users/tareelou/neural_network_simul/neural_network_simul.runs/synth_4" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_5" LaunchDir="/users/tareelou/neural_network_simul/neural_network_simul.runs/synth_5" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_7" LaunchDir="/users/tareelou/neural_network_simul/neural_network_simul.runs/synth_7" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_6" LaunchDir="/users/tareelou/neural_network_simul/neural_network_simul.runs/synth_6" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_8" LaunchDir="/users/tareelou/neural_network_simul/neural_network_simul.runs/synth_8" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="impl_1" LaunchDir="/users/tareelou/neural_network_simul/neural_network_simul.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+	</Run>
+</Runs>
+
