@@ -14,9 +14,11 @@ constant    NBR_PIXELS_T :natural := 20;
 
 constant NUMBER_OF_SIGNATURE_NEURONS :natural := 4;
 constant NUMBER_OF_AZIMUTH_NEURONS :natural := 10;
-
+constant table_2D_to_1D_size :natural := (NUMBER_OF_SIGNATURE_NEURONS * NUMBER_OF_AZIMUTH_NEURONS);
 
 type table is array(0 to NBR_NEURON_T -1) of std_logic_vector(SIZE_WIDTH_T -1 downto 0);
+type table_2D_to_1D is array(0 to table_2D_to_1D_size - 1) of std_logic_vector(SIZE_WIDTH_T -1 downto 0);
+
 type array_2D is array (0 to NBR_NEURON_T -1, 0 to NBR_NEURON_T -1) of std_logic_vector(SIZE_WIDTH_T -1 downto 0);--no double??
 
 --alias TYPE_OF_SIGNAL: std_logic_vector(SIZE_WIDTH-1 downto 0) is std_logic_vector(SIZE_WIDTH-1 downto 0);
