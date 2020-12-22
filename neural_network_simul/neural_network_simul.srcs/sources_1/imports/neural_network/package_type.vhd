@@ -9,9 +9,15 @@ use ieee.numeric_std.all;
 package package_type is
 
 constant    SIZE_WIDTH_T :natural := 16;
-constant    NBR_NEURON_T :natural := 10000;
-constant    NBR_PIXELS_T :natural := 2500;
+constant    NBR_NEURON_T :natural := 20;
+constant    NBR_PIXELS_T :natural := 20;
+
+constant NUMBER_OF_SIGNATURE_NEURONS :natural := 4;
+constant NUMBER_OF_AZIMUTH_NEURONS :natural := 10;
+
+
 type table is array(0 to NBR_NEURON_T -1) of std_logic_vector(SIZE_WIDTH_T -1 downto 0);
+type array_2D is array (0 to NBR_NEURON_T -1, 0 to NBR_NEURON_T -1) of std_logic_vector(SIZE_WIDTH_T -1 downto 0);--no double??
 
 --alias TYPE_OF_SIGNAL: std_logic_vector(SIZE_WIDTH-1 downto 0) is std_logic_vector(SIZE_WIDTH-1 downto 0);
 

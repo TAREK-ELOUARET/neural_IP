@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z045ffg900-2" LaunchTime="1607801365">
-  <File Type="VDS-TIMING-PB" Name="top_level_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="top_level_timing_summary_synth.rpt"/>
-  <File Type="RDS-RDS" Name="top_level.vds"/>
-  <File Type="PA-TCL" Name="top_level.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="top_level_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="top_level_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="top_level_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="top_level.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7z045ffg900-2" LaunchTime="1608542025">
+  <File Type="VDS-TIMING-PB" Name="tree_reduction_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="tree_reduction_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="tree_reduction.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="tree_reduction_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="tree_reduction_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="tree_reduction_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="tree_reduction.vds"/>
+  <File Type="PA-TCL" Name="tree_reduction.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/neural_network/package_type.vhd">
       <FileInfo>
         <Attr Name="Library" Val="neural"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../Téléchargements/neural_network/package_type.vhd"/>
-        <Attr Name="ImportTime" Val="1605607888"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/neural_network/neuro_bio.vhd">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Téléchargements/neural_network/neuro_bio.vhd"/>
         <Attr Name="ImportTime" Val="1605607888"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -35,8 +27,18 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/neural_network/neuro_bio.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Téléchargements/neural_network/neuro_bio.vhd"/>
+        <Attr Name="ImportTime" Val="1605607888"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/neural_network/top_level.vhd">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../Téléchargements/neural_network/top_level.vhd"/>
         <Attr Name="ImportTime" Val="1605607888"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -46,6 +48,7 @@
     <File Path="$PSRCDIR/sources_1/imports/neural_network/MATH_REAL.vhd">
       <FileInfo>
         <Attr Name="Library" Val="work"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../Téléchargements/neural_network/MATH_REAL.vhd"/>
         <Attr Name="ImportTime" Val="1605607888"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -55,6 +58,7 @@
     <File Path="$PSRCDIR/sources_1/imports/ieee_proposed/float_pkg_c.vhd">
       <FileInfo>
         <Attr Name="Library" Val="work"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../apps/Xilinx/Vivado/2016.4/ids_lite/ISE/vhdl/src/ieee_proposed/float_pkg_c.vhd"/>
         <Attr Name="ImportTime" Val="1480623682"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -64,6 +68,7 @@
     <File Path="$PSRCDIR/sources_1/imports/ieee_proposed/fixed_pkg_c.vhd">
       <FileInfo>
         <Attr Name="Library" Val="work"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../apps/Xilinx/Vivado/2016.4/ids_lite/ISE/vhdl/src/ieee_proposed/fixed_pkg_c.vhd"/>
         <Attr Name="ImportTime" Val="1480623682"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -73,6 +78,7 @@
     <File Path="$PSRCDIR/sources_1/imports/ieee_proposed/fixed_float_types_c.vhd">
       <FileInfo>
         <Attr Name="Library" Val="work"/>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../apps/Xilinx/Vivado/2016.4/ids_lite/ISE/vhdl/src/ieee_proposed/fixed_float_types_c.vhd"/>
         <Attr Name="ImportTime" Val="1480623682"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -89,10 +95,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/spatial_working_memory.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="top_level"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="tree_reduction"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

@@ -1,0 +1,114 @@
+
+*** Running vivado
+    with args -log top_level.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_level.tcl -notrace
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source top_level.tcl -notrace
+
+*** Halting run - EA reset detected ***
+
+
+
+    while executing
+"start_step init_design"
+    (file "top_level.tcl" line 49)
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 14 15:38:16 2020...
+
+*** Running vivado
+    with args -log top_level.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_level.tcl -notrace
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source top_level.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 90 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z045ffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/users/tareelou/git_neural/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc]
+CRITICAL WARNING: [Vivado 12-2272] Clock names may not contain wildcard characters, as it confuses tcl. Skipping 'VecOut_mux[*]' [/users/tareelou/git_neural/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:2]
+CRITICAL WARNING: [Vivado 12-2272] Clock names may not contain wildcard characters, as it confuses tcl. Skipping 'pixel[*]' [/users/tareelou/git_neural/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:3]
+CRITICAL WARNING: [Vivado 12-2272] Clock names may not contain wildcard characters, as it confuses tcl. Skipping 'weight[*]' [/users/tareelou/git_neural/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:4]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/users/tareelou/git_neural/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc:7]
+get_clocks: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1956.809 ; gain = 547.578 ; free physical = 109092 ; free virtual = 116610
+Finished Parsing XDC File [/users/tareelou/git_neural/neural_network_simul/neural_network_simul.srcs/constrs_1/new/top_constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1956.809 ; gain = 950.453 ; free physical = 109062 ; free virtual = 116579
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: opt_design -directive ExploreSequentialArea
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: ExploreSequentialArea
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z045'
+INFO: [Common 17-1223] The version limit for your license is '2019.01' and will expire in -683 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.39 . Memory (MB): peak = 2028.844 ; gain = 64.031 ; free physical = 108893 ; free virtual = 116410
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: cc9a11c2
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 876ded99
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2028.844 ; gain = 0.000 ; free physical = 108889 ; free virtual = 116406
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant propagation | Checksum: 876ded99
+
+Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2028.844 ; gain = 0.000 ; free physical = 108889 ; free virtual = 116406
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 155 unconnected nets.
+INFO: [Opt 31-11] Eliminated 1 unconnected cells.
+Phase 3 Sweep | Checksum: 10906213e
+
+Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2028.844 ; gain = 0.000 ; free physical = 108887 ; free virtual = 116403
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 4 BUFG optimization | Checksum: 10906213e
+
+Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2028.844 ; gain = 0.000 ; free physical = 108885 ; free virtual = 116401
+
+Phase 5 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 5 Constant propagation | Checksum: 10906213e
+
+Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2028.844 ; gain = 0.000 ; free physical = 108885 ; free virtual = 116401
+
+Phase 6 Sweep
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 6 Sweep | Checksum: 10906213e
+
+Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2028.844 ; gain = 0.000 ; free physical = 108883 ; free virtual = 116400
+
+Phase 7 Resynthesis
+Abnormal program termination (11)
+Please check '/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_252/hs_err_pid24811.log' for details

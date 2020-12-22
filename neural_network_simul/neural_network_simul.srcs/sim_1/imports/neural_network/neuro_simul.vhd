@@ -27,7 +27,7 @@ component tree_reduction is
 	reset       : in std_logic;
   	flag        : in std_logic;
   	mux_table_input    : in table;
-  	mux_table_output   : out std_logic_vector(SIZE_WIDTH_T - 1 downto 0)
+  	mux_table_output   : out table
   	);
 end component tree_reduction;
 
@@ -37,7 +37,7 @@ end component tree_reduction;
     --signal mux_table_input_t  : table:= (others => ("00000001110"));
                                                            
     --signal mux_table_input_t  : table;
-    signal mux_table_output_t : std_logic_vector(SIZE_WIDTH_T - 1 downto 0);
+    signal mux_table_output_t : table;
     
     signal mux_table_input_t : table := (
          2 => "0000000000000001" , --255

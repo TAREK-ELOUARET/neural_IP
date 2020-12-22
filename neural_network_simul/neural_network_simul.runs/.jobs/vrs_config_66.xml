@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="synth_optimized" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/synth_optimized" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="imple_230" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_230" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_231" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_231" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="post_route_phys_opt_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_232" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_232" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_233" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_233" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_234" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_234" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_235" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_235" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_236" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_236" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_237" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_237" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_238" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_238" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_239" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_239" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_240" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_240" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_241" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_241" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_242" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_242" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_243" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_243" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_244" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_244" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_245" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_245" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_246" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_246" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_247" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_247" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_248" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_248" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_249" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_249" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_250" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_250" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_251" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_251" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_252" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_252" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_253" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_253" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_254" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_254" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="post_route_phys_opt_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_255" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_255" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+	<Run Id="imple_256" LaunchDir="/users/tareelou/git_neural/neural_network_simul/neural_network_simul.runs/imple_256" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_optimized"/>
+	</Run>
+</Runs>
+

@@ -60,6 +60,21 @@ architecture neuronFunction of top_level is
         );
     end component tree_reduction;
 
+    component spatial_working_memory is
+        generic (
+	       SIZE_WIDTH :natural ;
+  	       NBR_NEURON :natural ;
+  	       NBR_PIXELS :natural 
+        );
+        port (
+	       clk 		: in std_logic;
+	       reset       : in std_logic;
+  	       flag        : inout std_logic;
+  	       vecout_tree      : in table;
+  	       VecOut 		: out array_2D
+  	     );
+  	end component spatial_working_memory;
+  	
 begin
       
      -- VecOut_weighted_sum <= vecOut_t; ----To extract results for simulations 
@@ -76,7 +91,10 @@ begin
            U2: tree_reduction 
                                       generic map (SIZE_WIDTH => SIZE_WIDTH_T ,NBR_NEURON => NBR_NEURON_T,  NBR_PIXELS => NBR_PIXELS_T)
                                       port map (clk => clk, reset => reset, flag => flag_t, mux_table_input => vecOut_t, mux_table_output => VecOut_mux);
-           
+
+          U2: Spatial working memory 
+                                      generic map (SIZE_WIDTH => SIZE_WIDTH_T ,NBR_NEURON => NBR_NEURON_T,  NBR_PIXELS => NBR_PIXELS_T)
+                                      port map (clk => clk, reset => reset, flag => flag_t, mux_table_input => vecOut_t, mux_table_output => VecOut_mux);           
           -- end generate tree_reduction_bloc;   
 	
 end neuronFunction;
