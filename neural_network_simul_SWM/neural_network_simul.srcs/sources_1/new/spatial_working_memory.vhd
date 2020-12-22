@@ -124,7 +124,7 @@ begin
 	end process SWM; 
 	
 	
-	learning:process (clk)
+	learning:process (clk, flag_SWM)
     variable Azimuth_neuron_t :     table;
     variable l :     integer;
     variable Maximum_learning_value: std_logic_vector(SIZE_WIDTH -1 downto 0);
