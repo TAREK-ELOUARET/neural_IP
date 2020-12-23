@@ -24,7 +24,7 @@ entity spatial_working_memory is
   	signature_weight       : in table; 
   	
   	azimuth_neurons        : in table;
-  	azimuth_weight         : in table;
+  	azimuth_weight         : in table := (others => (others => '0')); -- To change it to fixed point type after into 0.001
   
   	SWM_neurons 		   : out array_2D
   	);
@@ -125,8 +125,6 @@ begin
 	
 	
 	learning:process (clk, flag_SWM)
-    variable Azimuth_neuron_t :     table;
-    variable l :     integer;
     variable Maximum_learning_value: std_logic_vector(SIZE_WIDTH -1 downto 0);
     
     begin 
