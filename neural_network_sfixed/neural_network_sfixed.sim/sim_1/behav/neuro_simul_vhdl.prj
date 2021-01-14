@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl neuronal  "../../../neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/MATH_REAL.vhd"
+vhdl neuronal  "../../../neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_float_types_c.vhd"
+vhdl neuronal  "../../../neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_pkg_c.vhd"
+vhdl neuronal  "../../../neural_network_sfixed.srcs/sources_1/imports/ieee/float_pkg_c.vhd"
+vhdl neuronal  "../../../neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/package_type.vhd"
+vhdl xil_defaultlib  "../../../neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/neuro_bio.vhd"
+vhdl xil_defaultlib  "../../../neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/tree_reduction.vhd"
+vhdl xil_defaultlib  "../../../neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/top_level.vhd"
+vhdl xil_defaultlib  "../../../neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd"
+
+# Do not sort compile order
+nosort

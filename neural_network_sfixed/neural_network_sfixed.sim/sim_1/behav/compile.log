@@ -1,0 +1,13 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/MATH_REAL.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_float_types_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/float_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/package_type.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/neuro_bio.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_bio
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/tree_reduction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tree_reduction
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_level
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_simul

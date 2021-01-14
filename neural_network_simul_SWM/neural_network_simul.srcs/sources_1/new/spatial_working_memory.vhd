@@ -36,6 +36,25 @@ architecture neuronFunction of spatial_working_memory is
   -- Calculate the absoluate value between two signals
   shared variable SWM_neurons_t 		   : array_2D;
 
+
+    
+      function activate_function(Azimuth_neuron :     std_logic_vector -- calculation of maximum (Aj(t) * Wj,il(t))
+                    ) return  std_logic_vector is 
+                    variable temp : std_logic_vector(SIZE_WIDTH -1 downto 0);
+
+      begin
+            if Azimuth_neuron > 1 then 
+                temp := (others =>'1');   
+            elsif  Azimuth_neuron < 0 then 
+                temp := (others =>'1'); 
+            else  temp := Azimuth_neuron;
+                  
+            end if;
+
+      return temp;
+
+  end function;
+  
     function maximum_set(Azimuth_neuron :     table -- calculation of maximum (Aj(t) * Wj,il(t))
                       ) return  std_logic_vector is 
                       variable temp : std_logic_vector(SIZE_WIDTH -1 downto 0);
@@ -112,7 +131,7 @@ begin
                                 Azimuth_neuron_t(k) := azimuth_neurons(k) * azimuth_weight(k);
                             end loop;
                                                 
-		                    SWM_neurons_t(i,j) := (signature_neurons(j) * signature_weight(j)) * (maximum_set(Azimuth_neuron_t));
+		                    SWM_neurons_t(i,j) := activate_function((signature_neurons(j) * signature_weight(j)) * (maximum_set(Azimuth_neuron_t)));	                    
 		                    l := l+3;
 		          end loop;
 		          end loop;
@@ -132,7 +151,8 @@ begin
        if flag_SWM = '1' then
             if rising_edge(clk) then 
                  Maximum_learning_value := maximum_set_SWM(linearize_2D_array(SWM_neurons_t)); -- CHOOSE THE MAXIMUM VALUE FROM NEURONS TO be UPDATE & LEARN
-                 -- UPDATE NOW THE WEIGHT OF THE SELECTED NEURON WITH MAXIMUM VALUE!   
+                 -- UPDATE NOW THE WEIGHT OF THE SELECTED NEURON WITH MAXIMUM VALUE!  
+                 -- UPDATE the signal weight flag of neurons to not compete in the next itteration while reset = 0 for same image!!  
             end if;
        end if;
     end process learning; 

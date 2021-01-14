@@ -1,0 +1,964 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+Process ID: 37983
+
+Current time: 	12/22/20 9:47:56 AM CET
+Time zone: 	Central European Time (Europe/Paris)
+
+OS: DISTRIB_ID=Ubuntu
+Version: 5.0.0-23-generic
+Architecture: amd64
+Available processors (cores): 72
+
+DISPLAY: localhost:11.0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	/apps/Xilinx/Vivado/2016.4/tps/lnx64/jre
+
+User name: 	tareelou
+User home directory: /users/tareelou
+User working directory: /users/tareelou/git_neural
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: /apps/Xilinx/Vivado
+RDI data directory: /apps/Xilinx/Vivado/2016.4/data
+RDI bin directory: /apps/Xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: /users/tareelou/.Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: /users/tareelou/.Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	206 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 1,067 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectList(PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, "/users/tareelou/git_neural/neural_network_simul/neural_network_simul.xpr", 0); // q:k (JViewport:JComponent, cd:JFrame)
+// [GUI Memory]: 34 MB (+32778kb) [00:00:04]
+// [Engine Memory]: 1,045 MB (+944400kb) [00:00:04]
+// Opening Vivado Project: /users/tareelou/git_neural/neural_network_simul/neural_network_simul.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /users/tareelou/git_neural/neural_network_simul/neural_network_simul.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /users/tareelou/git_neural/neural_network_simul/neural_network_simul.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 37 MB (+2226kb) [00:00:07]
+// [Engine Memory]: 1,133 MB (+37241kb) [00:00:07]
+// [GUI Memory]: 49 MB (+9600kb) [00:00:07]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/apps/Xilinx/Vivado/2016.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,161 MB. GUI used memory: 27 MB. Current time: 12/22/20 9:47:58 AM CET
+// Project name: neural_network_simul; location: /users/tareelou/git_neural/neural_network_simul; part: xc7z045ffg900-2
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 54 MB (+3674kb) [00:00:12]
+// [GUI Memory]: 59 MB (+1452kb) [00:00:32]
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, spatial_working_memory - neuronFunction (spatial_working_memory.vhd)]", 5, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, spatial_working_memory - neuronFunction (spatial_working_memory.vhd)]", 5, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,172 MB. GUI used memory: 29 MB. Current time: 12/22/20 9:48:28 AM CET
+// Elapsed time: 13 seconds
+selectCodeEditor("spatial_working_memory.vhd", 203, 458); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 29 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // y:i (D:JPanel, cd:JFrame)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g:JideTabbedPane (L:aE, cd:JFrame)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g:JideTabbedPane (L:aE, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 8); // y:i (D:JPanel, cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 8); // y:i (D:JPanel, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 8); // y:i (D:JPanel, cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 8); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, top_level.vhd]", 2, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, top_level.vhd]", 2, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, spatial_working_memory - neuronFunction (spatial_working_memory.vhd)]", 6, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, spatial_working_memory - neuronFunction (spatial_working_memory.vhd)]", 6, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g:JideTabbedPane (L:aE, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, neural, package_type.vhd]", 3, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, neural, package_type.vhd]", 3, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 175, 50, false, true, false, false, false); // bF:I (JPanel:JComponent, cd:JFrame) - Control Key
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 40 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_PROJECT, "Close Project"); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// bt:g (cd:JFrame):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,189 MB. GUI used memory: 29 MB. Current time: 12/22/20 9:50:46 AM CET
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bt:g (cd:JFrame)
+// [Engine Memory]: 1,190 MB (+239kb) [00:02:58]
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // k:JideButton (JPanel:JComponent, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("/users/tareelou/git_neural/neural_network_simul_SWM/neural_network_simul.xpr");
+// Opening Vivado Project: /users/tareelou/git_neural/neural_network_simul_SWM/neural_network_simul.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /users/tareelou/git_neural/neural_network_simul_SWM/neural_network_simul.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/users/tareelou/git_neural/neural_network_simul' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/apps/Xilinx/Vivado/2016.4/data/ip'. 
+// [GUI Memory]: 70 MB (+8674kb) [00:03:05]
+// Project name: neural_network_simul; location: /users/tareelou/git_neural/neural_network_simul_SWM; part: xc7z045ffg900-2
+// 'i' command handler elapsed time: 5 seconds
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, spatial_working_memory - neuronFunction (spatial_working_memory.vhd)]", 5, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, spatial_working_memory - neuronFunction (spatial_working_memory.vhd)]", 5, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+minimizeFrame(PAResourceOtoP.PAViews_DESIGN_RUNS, "Design Runs"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+// [GUI Memory]: 74 MB (+472kb) [00:13:32]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,216 MB. GUI used memory: 32 MB. Current time: 12/22/20 10:20:48 AM CET
+// Elapsed time: 2192 seconds
+selectCodeEditor("spatial_working_memory.vhd", 204, 715); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 162, 790); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 161, 790); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 121, 818); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 121, 818, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("spatial_working_memory.vhd", 136, 531); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 160, 533); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 165, 535); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 205, 325); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 165, 545); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 143, 337); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("spatial_working_memory.vhd", 83, 103); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 77, 115); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("spatial_working_memory.vhd", 99, 579); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 38 seconds
+selectCodeEditor("spatial_working_memory.vhd", 739, 273); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 739, 273, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 125, 573); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 77 seconds
+selectCodeEditor("spatial_working_memory.vhd", 121, 352); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 161, 365); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 231, 379); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("spatial_working_memory.vhd", 287, 293); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 31 seconds
+selectCodeEditor("spatial_working_memory.vhd", 381, 429); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 381, 429, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("spatial_working_memory.vhd", 376, 475); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 376, 475, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 280, 564); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 79 MB (+1355kb) [01:01:49]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,220 MB. GUI used memory: 30 MB. Current time: 12/22/20 10:50:48 AM CET
+// Elapsed time: 1134 seconds
+selectCodeEditor("spatial_working_memory.vhd", 410, 777); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 410, 777, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("spatial_working_memory.vhd", 425, 772); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 38 seconds
+selectCodeEditor("spatial_working_memory.vhd", 498, 384); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 244, 353, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("spatial_working_memory.vhd", 133, 429); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 98, 144); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("spatial_working_memory.vhd", 432, 339); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("spatial_working_memory.vhd", 386, 578); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 386, 578, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 398, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 439, 592); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 30 seconds
+selectCodeEditor("spatial_working_memory.vhd", 341, 576); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 62 seconds
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 320, 501); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 320, 501, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 331, 456); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 310, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 318, 398); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 148, 428); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 245, 292); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 245, 292, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 149, 419); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 48 seconds
+selectCodeEditor("spatial_working_memory.vhd", 556, 322); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 323, 321); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 284, 318); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 284, 318, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 246, 456); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 284, 307); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 284, 307, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("spatial_working_memory.vhd", 162, 416); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("spatial_working_memory.vhd", 278, 291); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 278, 291, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 335, 412); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 138, 393); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 425, 410); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 302, 416); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 247, 457); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,220 MB. GUI used memory: 30 MB. Current time: 12/22/20 11:20:48 AM CET
+// [GUI Memory]: 83 MB (+183kb) [01:47:22]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,220 MB. GUI used memory: 31 MB. Current time: 12/22/20 11:50:48 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,220 MB. GUI used memory: 32 MB. Current time: 12/22/20 12:20:48 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,220 MB. GUI used memory: 31 MB. Current time: 12/22/20 12:50:48 PM CET
+// Elapsed time: 7486 seconds
+selectCodeEditor("spatial_working_memory.vhd", 214, 383); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 258 seconds
+selectCodeEditor("spatial_working_memory.vhd", 820, 741); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 210, 175); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,223 MB. GUI used memory: 30 MB. Current time: 12/22/20 1:20:48 PM CET
+// Elapsed time: 1553 seconds
+selectCodeEditor("spatial_working_memory.vhd", 274, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 274, 127, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("spatial_working_memory.vhd", 274, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 281, 140); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("spatial_working_memory.vhd", 286, 216); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 478, 213); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 503 seconds
+selectCodeEditor("spatial_working_memory.vhd", 157, 742); // bF:I (JPanel:JComponent, cd:JFrame)
+// [Engine Memory]: 1,256 MB (+6689kb) [03:52:55]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,256 MB. GUI used memory: 30 MB. Current time: 12/22/20 1:40:48 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,256 MB. GUI used memory: 30 MB. Current time: 12/22/20 2:10:48 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,265 MB. GUI used memory: 31 MB. Current time: 12/22/20 2:40:48 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,265 MB. GUI used memory: 32 MB. Current time: 12/22/20 3:10:48 PM CET
+// Elapsed time: 6057 seconds
+selectCodeEditor("spatial_working_memory.vhd", 371, 607); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,290 MB. GUI used memory: 29 MB. Current time: 12/22/20 3:25:03 PM CET
+// Elapsed time: 228 seconds
+selectCodeEditor("spatial_working_memory.vhd", 131, 512); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 87, 511); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 78, 498); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 167, 521); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("spatial_working_memory.vhd", 386, 173); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 413, 171); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 413, 171, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g:JideTabbedPane (L:aE, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, neural, package_type.vhd]", 3, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, neural, package_type.vhd]", 3, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("package_type.vhd", 81, 308); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 630, 273); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 231, 275); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 231, 275, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("package_type.vhd", 231, 275); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 0, 309); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 99, 324); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 48, 308); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 48, 308, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "package_type.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 298, 307); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 401, 279); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 14 seconds
+selectCodeEditor("spatial_working_memory.vhd", 307, 112); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 307, 112, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("package_type.vhd", 344, 306); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 288, 302); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 288, 302, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 23 seconds
+typeControlKey((HResource) null, "package_type.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("package_type.vhd", 165, 229); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 165, 229, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 445, 304); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 95 seconds
+selectCodeEditor("package_type.vhd", 657, 305); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 81, 255); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 21 seconds
+typeControlKey((HResource) null, "package_type.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 130, 244); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 130, 244, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 237, 304); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 707, 244); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 276, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 369, 308); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("package_type.vhd", 105, 308); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 105, 308, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("package_type.vhd", 47, 291); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("package_type.vhd", 95, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 95, 295, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 163, 321); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 163, 321, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 322, 321); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 322, 321, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 285, 331); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 285, 331, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 196, 336); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 196, 336, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 37 seconds
+selectCodeEditor("spatial_working_memory.vhd", 164, 426); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 164, 426, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 415, 758); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 258, 455); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 258, 455, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 543, 758); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 28 seconds
+selectCodeEditor("spatial_working_memory.vhd", 235, 227); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 235, 227, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 211, 563); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 211, 563, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 249, 231); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 249, 231, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 355, 249); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 355, 249, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 10 seconds
+selectCodeEditor("spatial_working_memory.vhd", 203, 714); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 203, 714, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 105, 633); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 549, 380); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 269, 636); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("spatial_working_memory.vhd", 260, 217); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 260, 217, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 391, 231); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 391, 231, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("spatial_working_memory.vhd", 352, 380); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 11 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("spatial_working_memory.vhd", 403, 415); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("spatial_working_memory.vhd", 226, 171); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 226, 171, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 414, 302); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("package_type.vhd", 417, 224); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 30 seconds
+selectCodeEditor("spatial_working_memory.vhd", 37, 736); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 334 seconds
+selectCodeEditor("spatial_working_memory.vhd", 280, 692); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 293, 722); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 213, 605); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 772, 415); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 37 seconds
+selectCodeEditor("spatial_working_memory.vhd", 734, 215); // bF:I (JPanel:JComponent, cd:JFrame)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 278 seconds
+selectCodeEditor("spatial_working_memory.vhd", 17, 219); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 223 seconds
+selectCodeEditor("spatial_working_memory.vhd", 468, 402); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,305 MB. GUI used memory: 31 MB. Current time: 12/22/20 3:55:04 PM CET
+// Elapsed time: 670 seconds
+selectCodeEditor("spatial_working_memory.vhd", 325, 589); // bF:I (JPanel:JComponent, cd:JFrame)
+closeMainWindow("neural_network_simul - [/users/tareelou/git_neural/neural_network_simul_SWM/neural_network_simul.xpr] - Vivado 2016.4"); // cd:JFrame
+// y:aO (cd:JFrame): Exit Vivado: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, y:aO)
+dismissDialog("Exit Vivado"); // y:aO (cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_PROJECT, "Close Project"); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// bt:g (cd:JFrame):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,316 MB. GUI used memory: 28 MB. Current time: 12/22/20 4:00:04 PM CET
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bt:g (cd:JFrame)
+// Elapsed time: 79 seconds
+selectList(PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, "/users/tareelou/git_neural/neural_network_simul_SWM/neural_network_simul.xpr", 0, false, false, true, false, false); // q:k (JViewport:JComponent, cd:JFrame) - Alt Key
+// Elapsed time: 139 seconds
+selectList(PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, "/users/tareelou/git_neural/neural_network_simul_SWM/neural_network_simul.xpr", 0); // q:k (JViewport:JComponent, cd:JFrame)
+// Opening Vivado Project: /users/tareelou/git_neural/neural_network_simul_SWM/neural_network_simul.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /users/tareelou/git_neural/neural_network_simul_SWM/neural_network_simul.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/users/tareelou/git_neural/neural_network_simul' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/apps/Xilinx/Vivado/2016.4/data/ip'. 
+// Project name: neural_network_simul; location: /users/tareelou/git_neural/neural_network_simul_SWM; part: xc7z045ffg900-2
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, spatial_working_memory - neuronFunction (spatial_working_memory.vhd)]", 5, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, spatial_working_memory - neuronFunction (spatial_working_memory.vhd)]", 5, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // H:a (Workspace:JPanel, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 97, 691); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 97, 694, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("spatial_working_memory.vhd", 97, 694); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 97, 694); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 97, 694); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 97, 694); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 108, 699); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 109, 699, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 175, 590); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 14 seconds
+selectCodeEditor("spatial_working_memory.vhd", 62, 570); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 63, 563); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 83, 579); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 84, 555); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 52 seconds
+selectCodeEditor("spatial_working_memory.vhd", 208, 676); // bF:I (JPanel:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_PROJECT, "Close Project"); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// bt:g (cd:JFrame):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 30 MB. Current time: 12/22/20 4:05:20 PM CET
+// Tcl Message: close_project 
+// [Engine Memory]: 1,323 MB (+4758kb) [06:17:30]
+dismissDialog("Close Project"); // bt:g (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 28 MB. Current time: 12/22/20 4:35:23 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/22/20 5:05:24 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/22/20 5:35:24 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/22/20 6:05:23 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/22/20 6:35:24 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/22/20 7:05:24 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/22/20 7:35:24 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/22/20 8:05:24 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/22/20 8:35:24 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/22/20 9:05:24 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/22/20 9:35:24 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/22/20 10:05:24 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/22/20 10:35:24 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/22/20 11:05:24 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/22/20 11:35:24 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/23/20 12:05:24 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/23/20 12:35:24 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/23/20 1:05:24 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/23/20 1:35:24 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/23/20 2:05:24 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/23/20 2:35:24 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/23/20 3:05:24 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/23/20 3:35:24 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/23/20 4:05:24 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/23/20 4:35:24 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/23/20 5:05:25 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/23/20 5:35:25 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/23/20 6:05:25 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/23/20 6:35:25 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/23/20 7:05:25 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/23/20 7:35:25 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/23/20 8:05:25 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/23/20 8:35:25 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/23/20 9:05:25 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,323 MB. GUI used memory: 27 MB. Current time: 12/23/20 9:35:25 AM CET
+// Elapsed time: 64036 seconds
+selectList(PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, "/users/tareelou/git_neural/neural_network_simul_SWM/neural_network_simul.xpr", 0); // q:k (JViewport:JComponent, cd:JFrame)
+// Opening Vivado Project: /users/tareelou/git_neural/neural_network_simul_SWM/neural_network_simul.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /users/tareelou/git_neural/neural_network_simul_SWM/neural_network_simul.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/users/tareelou/git_neural/neural_network_simul' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/apps/Xilinx/Vivado/2016.4/data/ip'. 
+// Project name: neural_network_simul; location: /users/tareelou/git_neural/neural_network_simul_SWM; part: xc7z045ffg900-2
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 513 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, spatial_working_memory - neuronFunction (spatial_working_memory.vhd)]", 5, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, spatial_working_memory - neuronFunction (spatial_working_memory.vhd)]", 5, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+minimizeFrame(PAResourceOtoP.PAViews_DESIGN_RUNS, "Design Runs"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,324 MB. GUI used memory: 33 MB. Current time: 12/23/20 10:05:25 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,324 MB. GUI used memory: 32 MB. Current time: 12/23/20 10:35:25 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,345 MB. GUI used memory: 33 MB. Current time: 12/23/20 11:02:45 AM CET
+// Elapsed time: 4115 seconds
+selectCodeEditor("spatial_working_memory.vhd", 536, 607); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 543, 603, false, false, true, false, false); // bF:I (JPanel:JComponent, cd:JFrame) - Alt Key
+selectCodeEditor("spatial_working_memory.vhd", 553, 622, false, false, true, false, false); // bF:I (JPanel:JComponent, cd:JFrame) - Alt Key
+selectCodeEditor("spatial_working_memory.vhd", 593, 665, false, false, true, false, false); // bF:I (JPanel:JComponent, cd:JFrame) - Alt Key
+// Elapsed time: 16 seconds
+selectCodeEditor("spatial_working_memory.vhd", 123, 602); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 123, 602, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("spatial_working_memory.vhd", 28, 606); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 224, 611); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,345 MB. GUI used memory: 33 MB. Current time: 12/23/20 11:32:45 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,345 MB. GUI used memory: 32 MB. Current time: 12/23/20 12:02:45 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,345 MB. GUI used memory: 31 MB. Current time: 12/23/20 12:32:45 PM CET
+// Elapsed time: 5915 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
