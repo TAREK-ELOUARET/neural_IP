@@ -4299,3 +4299,13 @@ selectCodeEditor("spatial_working_memory.vhd", 1301, 818); // bF:I (JPanel:JComp
 // HMemoryUtils.trashcanNow. Engine heap size: 4,551 MB. GUI used memory: 58 MB. Current time: 1/14/21 10:52:08 AM CET
 // Elapsed time: 1000 seconds
 selectCodeEditor("spatial_working_memory.vhd", 445, 471); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 204 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,551 MB. GUI used memory: 58 MB. Current time: 1/14/21 11:22:08 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,551 MB. GUI used memory: 58 MB. Current time: 1/14/21 11:52:08 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,551 MB. GUI used memory: 58 MB. Current time: 1/14/21 12:22:08 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,552 MB. GUI used memory: 58 MB. Current time: 1/14/21 12:52:08 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,556 MB. GUI used memory: 59 MB. Current time: 1/14/21 1:22:08 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,559 MB. GUI used memory: 57 MB. Current time: 1/14/21 1:52:08 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,563 MB. GUI used memory: 57 MB. Current time: 1/14/21 2:22:08 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 4,566 MB. GUI used memory: 57 MB. Current time: 1/14/21 2:52:08 PM CET

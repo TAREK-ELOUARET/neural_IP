@@ -2,15 +2,11 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Thu Jan 14 15:07:49 2021
-# Process ID: 18864
+# Start of session at: Thu Jan 14 15:06:57 2021
+# Process ID: 18619
 # Current directory: /users/tareelou/git_neural
 # Command line: vivado
 # Log file: /users/tareelou/git_neural/vivado.log
 # Journal file: /users/tareelou/git_neural/vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project /users/tareelou/neural_network_sfixed/neural_network_sfixed.xpr
-open_project /users/tareelou/project_1/project_1.xpr
-open_project /users/tareelou/neural_network_simul/neural_network_simul.xpr
-close_project

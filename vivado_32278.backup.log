@@ -1,0 +1,876 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Jan  4 09:43:48 2021
+# Process ID: 32278
+# Current directory: /users/tareelou/git_neural
+# Command line: vivado
+# Log file: /users/tareelou/git_neural/vivado.log
+# Journal file: /users/tareelou/git_neural/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /users/tareelou/git_neural/neural_network_simul_SWM/neural_network_simul.xpr
+INFO: [Project 1-313] Project file moved from '/users/tareelou/git_neural/neural_network_simul' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/apps/Xilinx/Vivado/2016.4/data/ip'.
+open_project /users/tareelou/neural_network_sfixed/neural_network_sfixed.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/apps/Xilinx/Vivado/2016.4/data/ip'.
+current_project neural_network_simul
+current_project neural_network_sfixed
+set_property top tree_reduction [current_fileset]
+current_project neural_network_simul
+file mkdir /users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new
+current_project neural_network_sfixed
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd w ]
+add_files -fileset sim_1 /users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd
+set_property top tree_reduction [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property top neuro_simul [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_runs synth_1 -jobs 8
+[Wed Jan 13 10:28:58 2021] Launched synth_1...
+Run output will be captured here: /users/tareelou/neural_network_sfixed/neural_network_sfixed.runs/synth_1/runme.log
+set_property source_mgmt_mode All [current_project]
+current_project neural_network_simul
+current_project neural_network_sfixed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'neuro_simul' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+xvhdl -m64 --relax -prj neuro_simul_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/MATH_REAL.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_float_types_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/float_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/package_type.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/tree_reduction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tree_reduction
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd" into library xil_defaultlib
+ERROR: [VRFC 10-149] 'package_type' is not compiled in library neural [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:11]
+INFO: [VRFC 10-307] analyzing entity neuro_simul
+ERROR: [VRFC 10-1504] unit neuro_simul ignored due to previous errors [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:13]
+INFO: [VRFC 10-240] VHDL file /users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-99] Step results log file:'/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'neuro_simul' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+xvhdl -m64 --relax -prj neuro_simul_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/MATH_REAL.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_float_types_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/float_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/package_type.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/tree_reduction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tree_reduction
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_simul
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /apps/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto 286763c7124d422c9b98bebc3ea7153a --debug typical --relax --mt 8 -L neuronal -L xil_defaultlib -L secureip --snapshot neuro_simul_behav xil_defaultlib.neuro_simul -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 16 elements ; expected 22 [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:42]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit neuro_simul in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'neuro_simul' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+xvhdl -m64 --relax -prj neuro_simul_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/MATH_REAL.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_float_types_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/float_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/package_type.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/tree_reduction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tree_reduction
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_simul
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /apps/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto 286763c7124d422c9b98bebc3ea7153a --debug typical --relax --mt 8 -L neuronal -L xil_defaultlib -L secureip --snapshot neuro_simul_behav xil_defaultlib.neuro_simul -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package neuronal.fixed_float_types
+Compiling package neuronal.fixed_pkg
+Compiling package neuronal.math_real
+Compiling package neuronal.float_pkg
+Compiling package neuronal.package_type
+Compiling architecture treefunction of entity xil_defaultlib.tree_reduction [\tree_reduction(size_width=16,nb...]
+Compiling architecture behavioral of entity xil_defaultlib.neuro_simul
+Built simulation snapshot neuro_simul_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "neuro_simul_behav -key {Behavioral:sim_1:Functional:neuro_simul} -tclbatch {neuro_simul.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source neuro_simul.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'neuro_simul_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 9360.543 ; gain = 51.105 ; free physical = 35020 ; free virtual = 74068
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+INFO: [HDL 9-1061] Parsing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/top_level.vhd" into library xil_defaultlib [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/top_level.vhd:1]
+[Wed Jan 13 11:08:44 2021] Launched synth_1...
+Run output will be captured here: /users/tareelou/neural_network_sfixed/neural_network_sfixed.runs/synth_1/runme.log
+set_property top top_level [current_fileset]
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+INFO: [HDL 9-1061] Parsing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/top_level.vhd" into library xil_defaultlib [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/top_level.vhd:1]
+[Wed Jan 13 11:12:33 2021] Launched synth_1...
+Run output will be captured here: /users/tareelou/neural_network_sfixed/neural_network_sfixed.runs/synth_1/runme.log
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'neuro_simul' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+xvhdl -m64 --relax -prj neuro_simul_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/MATH_REAL.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_float_types_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/float_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/package_type.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/neuro_bio.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_bio
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/tree_reduction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tree_reduction
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_level
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd" into library xil_defaultlib
+ERROR: [VRFC 10-149] 'package_type' is not compiled in library neural [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:97]
+INFO: [VRFC 10-307] analyzing entity neuro_simul
+ERROR: [VRFC 10-1504] unit neuro_simul ignored due to previous errors [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:99]
+INFO: [VRFC 10-240] VHDL file /users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'neuro_simul' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+xvhdl -m64 --relax -prj neuro_simul_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/MATH_REAL.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_float_types_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/float_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/package_type.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/neuro_bio.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_bio
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/tree_reduction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tree_reduction
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_level
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd" into library xil_defaultlib
+ERROR: [VRFC 10-149] 'package_type' is not compiled in library neural [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:97]
+INFO: [VRFC 10-307] analyzing entity neuro_simul
+ERROR: [VRFC 10-1504] unit neuro_simul ignored due to previous errors [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:99]
+INFO: [VRFC 10-240] VHDL file /users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'neuro_simul' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+xvhdl -m64 --relax -prj neuro_simul_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/MATH_REAL.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_float_types_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/float_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/package_type.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/neuro_bio.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_bio
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/tree_reduction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tree_reduction
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_level
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_simul
+ERROR: [VRFC 10-91] sfixed is not declared [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:110]
+ERROR: [VRFC 10-91] sfixed is not declared [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:111]
+ERROR: [VRFC 10-91] sfixed is not declared [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:120]
+ERROR: [VRFC 10-91] sfixed is not declared [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:121]
+ERROR: [VRFC 10-91] pixel is not declared [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:133]
+ERROR: [VRFC 10-91] weight is not declared [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:134]
+ERROR: [VRFC 10-91] pixel is not declared [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:145]
+ERROR: [VRFC 10-91] weight is not declared [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:146]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:103]
+INFO: [VRFC 10-240] VHDL file /users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'neuro_simul' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+xvhdl -m64 --relax -prj neuro_simul_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/MATH_REAL.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_float_types_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/float_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/package_type.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/neuro_bio.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_bio
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/tree_reduction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tree_reduction
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_level
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_simul
+ERROR: [VRFC 10-91] sfixed is not declared [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:110]
+ERROR: [VRFC 10-91] sfixed is not declared [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:111]
+ERROR: [VRFC 10-91] sfixed is not declared [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:120]
+ERROR: [VRFC 10-91] sfixed is not declared [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:121]
+ERROR: [VRFC 10-91] pixel is not declared [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:133]
+ERROR: [VRFC 10-91] weight is not declared [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:134]
+ERROR: [VRFC 10-91] pixel is not declared [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:145]
+ERROR: [VRFC 10-91] weight is not declared [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:146]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:103]
+INFO: [VRFC 10-240] VHDL file /users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'neuro_simul' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+xvhdl -m64 --relax -prj neuro_simul_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/MATH_REAL.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_float_types_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/float_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/package_type.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/neuro_bio.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_bio
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/tree_reduction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tree_reduction
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_level
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_simul
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /apps/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto 286763c7124d422c9b98bebc3ea7153a --debug typical --relax --mt 8 -L neuronal -L xil_defaultlib -L secureip --snapshot neuro_simul_behav xil_defaultlib.neuro_simul -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package neuronal.fixed_float_types
+Compiling package neuronal.fixed_pkg
+Compiling package neuronal.math_real
+Compiling package neuronal.float_pkg
+Compiling package neuronal.package_type
+Compiling architecture neuronfunction of entity xil_defaultlib.neuro_bio [\neuro_bio(size_width=16,nbr_neu...]
+Compiling architecture treefunction of entity xil_defaultlib.tree_reduction [\tree_reduction(size_width=16,nb...]
+Compiling architecture neuronfunction of entity xil_defaultlib.top_level [top_level_default]
+Compiling architecture behavioral of entity xil_defaultlib.neuro_simul
+Built simulation snapshot neuro_simul_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "neuro_simul_behav -key {Behavioral:sim_1:Functional:neuro_simul} -tclbatch {neuro_simul.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source neuro_simul.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'neuro_simul_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 9374.211 ; gain = 0.000 ; free physical = 34953 ; free virtual = 74000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+file mkdir /users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/new
+close [ open /users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/new/spatial_working_memory.vhd w ]
+add_files /users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/new/spatial_working_memory.vhd
+current_project neural_network_simul
+current_project neural_network_sfixed
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+INFO: [HDL 9-1061] Parsing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/package_type.vhd" into library neuronal [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/package_type.vhd:1]
+[Wed Jan 13 14:22:59 2021] Launched synth_1...
+Run output will be captured here: /users/tareelou/neural_network_sfixed/neural_network_sfixed.runs/synth_1/runme.log
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'neuro_simul' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+xvhdl -m64 --relax -prj neuro_simul_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/MATH_REAL.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_float_types_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/float_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/package_type.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/neuro_bio.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_bio
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/tree_reduction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tree_reduction
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_level
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_simul
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /apps/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto 286763c7124d422c9b98bebc3ea7153a --debug typical --relax --mt 8 -L neuronal -L xil_defaultlib -L secureip --snapshot neuro_simul_behav xil_defaultlib.neuro_simul -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package neuronal.fixed_float_types
+Compiling package neuronal.fixed_pkg
+Compiling package neuronal.math_real
+Compiling package neuronal.float_pkg
+Compiling package neuronal.package_type
+Compiling architecture neuronfunction of entity xil_defaultlib.neuro_bio [\neuro_bio(size_width=16,nbr_neu...]
+Compiling architecture treefunction of entity xil_defaultlib.tree_reduction [\tree_reduction(size_width=16,nb...]
+Compiling architecture neuronfunction of entity xil_defaultlib.top_level [top_level_default]
+Compiling architecture behavioral of entity xil_defaultlib.neuro_simul
+Built simulation snapshot neuro_simul_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "neuro_simul_behav -key {Behavioral:sim_1:Functional:neuro_simul} -tclbatch {neuro_simul.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source neuro_simul.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'neuro_simul_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 9401.195 ; gain = 13.676 ; free physical = 36468 ; free virtual = 75515
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'neuro_simul' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+xvhdl -m64 --relax -prj neuro_simul_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/MATH_REAL.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_float_types_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/float_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/package_type.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/neuro_bio.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_bio
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/tree_reduction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tree_reduction
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_level
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_simul
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /apps/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto 286763c7124d422c9b98bebc3ea7153a --debug typical --relax --mt 8 -L neuronal -L xil_defaultlib -L secureip --snapshot neuro_simul_behav xil_defaultlib.neuro_simul -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package neuronal.fixed_float_types
+Compiling package neuronal.fixed_pkg
+Compiling package neuronal.math_real
+Compiling package neuronal.float_pkg
+Compiling package neuronal.package_type
+Compiling architecture neuronfunction of entity xil_defaultlib.neuro_bio [\neuro_bio(size_width=16,nbr_neu...]
+Compiling architecture treefunction of entity xil_defaultlib.tree_reduction [\tree_reduction(size_width=16,nb...]
+Compiling architecture neuronfunction of entity xil_defaultlib.top_level [top_level_default]
+Compiling architecture behavioral of entity xil_defaultlib.neuro_simul
+Built simulation snapshot neuro_simul_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "neuro_simul_behav -key {Behavioral:sim_1:Functional:neuro_simul} -tclbatch {neuro_simul.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source neuro_simul.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ERROR: Array sizes do not match, left array has 22 elements, right array has 23 elements
+Time: 0 ps  Iteration: 0  Process: /neuro_simul/line__157
+  File: /users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd
+
+HDL Line: /users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:157
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'neuro_simul_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 9414.203 ; gain = 8.008 ; free physical = 36467 ; free virtual = 75514
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'neuro_simul' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+xvhdl -m64 --relax -prj neuro_simul_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/MATH_REAL.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_float_types_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/float_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/package_type.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/neuro_bio.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_bio
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/tree_reduction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tree_reduction
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_level
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_simul
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /apps/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto 286763c7124d422c9b98bebc3ea7153a --debug typical --relax --mt 8 -L neuronal -L xil_defaultlib -L secureip --snapshot neuro_simul_behav xil_defaultlib.neuro_simul -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package neuronal.fixed_float_types
+Compiling package neuronal.fixed_pkg
+Compiling package neuronal.math_real
+Compiling package neuronal.float_pkg
+Compiling package neuronal.package_type
+Compiling architecture neuronfunction of entity xil_defaultlib.neuro_bio [\neuro_bio(size_width=16,nbr_neu...]
+Compiling architecture treefunction of entity xil_defaultlib.tree_reduction [\tree_reduction(size_width=16,nb...]
+Compiling architecture neuronfunction of entity xil_defaultlib.top_level [top_level_default]
+Compiling architecture behavioral of entity xil_defaultlib.neuro_simul
+Built simulation snapshot neuro_simul_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "neuro_simul_behav -key {Behavioral:sim_1:Functional:neuro_simul} -tclbatch {neuro_simul.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source neuro_simul.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ERROR: Array sizes do not match, left array has 22 elements, right array has 23 elements
+Time: 0 ps  Iteration: 0  Process: /neuro_simul/line__157
+  File: /users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd
+
+HDL Line: /users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:157
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'neuro_simul_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 9416.227 ; gain = 0.000 ; free physical = 36469 ; free virtual = 75516
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'neuro_simul' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+xvhdl -m64 --relax -prj neuro_simul_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/MATH_REAL.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_float_types_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/float_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/package_type.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/neuro_bio.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_bio
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/tree_reduction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tree_reduction
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_level
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_simul
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /apps/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto 286763c7124d422c9b98bebc3ea7153a --debug typical --relax --mt 8 -L neuronal -L xil_defaultlib -L secureip --snapshot neuro_simul_behav xil_defaultlib.neuro_simul -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package neuronal.fixed_float_types
+Compiling package neuronal.fixed_pkg
+Compiling package neuronal.math_real
+Compiling package neuronal.float_pkg
+Compiling package neuronal.package_type
+Compiling architecture neuronfunction of entity xil_defaultlib.neuro_bio [\neuro_bio(size_width=16,nbr_neu...]
+Compiling architecture treefunction of entity xil_defaultlib.tree_reduction [\tree_reduction(size_width=16,nb...]
+Compiling architecture neuronfunction of entity xil_defaultlib.top_level [top_level_default]
+Compiling architecture behavioral of entity xil_defaultlib.neuro_simul
+Built simulation snapshot neuro_simul_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "neuro_simul_behav -key {Behavioral:sim_1:Functional:neuro_simul} -tclbatch {neuro_simul.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source neuro_simul.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'neuro_simul_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 9416.227 ; gain = 0.000 ; free physical = 36448 ; free virtual = 75495
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'neuro_simul' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+xvhdl -m64 --relax -prj neuro_simul_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/MATH_REAL.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_float_types_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/float_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/package_type.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/neuro_bio.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_bio
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/tree_reduction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tree_reduction
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_level
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_simul
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /apps/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto 286763c7124d422c9b98bebc3ea7153a --debug typical --relax --mt 8 -L neuronal -L xil_defaultlib -L secureip --snapshot neuro_simul_behav xil_defaultlib.neuro_simul -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package neuronal.fixed_float_types
+Compiling package neuronal.fixed_pkg
+Compiling package neuronal.math_real
+Compiling package neuronal.float_pkg
+Compiling package neuronal.package_type
+Compiling architecture neuronfunction of entity xil_defaultlib.neuro_bio [\neuro_bio(size_width=16,nbr_neu...]
+Compiling architecture treefunction of entity xil_defaultlib.tree_reduction [\tree_reduction(size_width=16,nb...]
+Compiling architecture neuronfunction of entity xil_defaultlib.top_level [top_level_default]
+Compiling architecture behavioral of entity xil_defaultlib.neuro_simul
+Built simulation snapshot neuro_simul_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "neuro_simul_behav -key {Behavioral:sim_1:Functional:neuro_simul} -tclbatch {neuro_simul.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source neuro_simul.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'neuro_simul_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 9425.199 ; gain = 0.004 ; free physical = 36444 ; free virtual = 75491
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory /users/tareelou/neural_network_sfixed/neural_network_sfixed.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+INFO: [HDL 9-1061] Parsing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/top_level.vhd" into library xil_defaultlib [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/top_level.vhd:1]
+[Wed Jan 13 14:37:36 2021] Launched synth_1...
+Run output will be captured here: /users/tareelou/neural_network_sfixed/neural_network_sfixed.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'neuro_simul' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+xvhdl -m64 --relax -prj neuro_simul_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/MATH_REAL.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_float_types_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/float_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/package_type.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/neuro_bio.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_bio
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/tree_reduction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tree_reduction
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_level
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_simul
+ERROR: [VRFC 10-91] vecout_weighted_sum is not declared [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:143]
+ERROR: [VRFC 10-283] actual of formal out port vecout_weighted_sum cannot be an expression [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:143]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd:111]
+INFO: [VRFC 10-240] VHDL file /users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'neuro_simul' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+xvhdl -m64 --relax -prj neuro_simul_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/MATH_REAL.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_float_types_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/fixed_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/ieee/float_pkg_c.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/package_type.vhd" into library neuronal
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/neuro_bio.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_bio
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/tree_reduction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tree_reduction
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sources_1/imports/Neural_HDL_V_SFIXED/top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_level
+INFO: [VRFC 10-163] Analyzing VHDL file "/users/tareelou/neural_network_sfixed/neural_network_sfixed.srcs/sim_1/new/neuro_simul.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity neuro_simul
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /apps/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto 286763c7124d422c9b98bebc3ea7153a --debug typical --relax --mt 8 -L neuronal -L xil_defaultlib -L secureip --snapshot neuro_simul_behav xil_defaultlib.neuro_simul -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package neuronal.fixed_float_types
+Compiling package neuronal.fixed_pkg
+Compiling package neuronal.math_real
+Compiling package neuronal.float_pkg
+Compiling package neuronal.package_type
+Compiling architecture neuronfunction of entity xil_defaultlib.neuro_bio [\neuro_bio(size_width=16,nbr_neu...]
+Compiling architecture treefunction of entity xil_defaultlib.tree_reduction [\tree_reduction(size_width=16,nb...]
+Compiling architecture neuronfunction of entity xil_defaultlib.top_level [top_level_default]
+Compiling architecture behavioral of entity xil_defaultlib.neuro_simul
+Built simulation snapshot neuro_simul_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/users/tareelou/neural_network_sfixed/neural_network_sfixed.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "neuro_simul_behav -key {Behavioral:sim_1:Functional:neuro_simul} -tclbatch {neuro_simul.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source neuro_simul.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'neuro_simul_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 9430.227 ; gain = 0.000 ; free physical = 36446 ; free virtual = 75494

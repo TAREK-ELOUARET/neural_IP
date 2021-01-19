@@ -1,0 +1,1996 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+Process ID: 18864
+
+Current time: 	1/14/21 3:08:03 PM CET
+Time zone: 	Central European Time (Europe/Paris)
+
+OS: DISTRIB_ID=Ubuntu
+Version: 5.0.0-23-generic
+Architecture: amd64
+Available processors (cores): 72
+
+DISPLAY: localhost:11.0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	/apps/Xilinx/Vivado/2016.4/tps/lnx64/jre
+
+User name: 	tareelou
+User home directory: /users/tareelou
+User working directory: /users/tareelou/git_neural
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: /apps/Xilinx/Vivado
+RDI data directory: /apps/Xilinx/Vivado/2016.4/data
+RDI bin directory: /apps/Xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: /users/tareelou/.Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: /users/tareelou/.Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	142 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 1,028 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 51 MB (+51475kb) [00:00:05]
+// [Engine Memory]: 983 MB (+879786kb) [00:00:05]
+selectList(PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, "/users/tareelou/neural_network_sfixed/neural_network_sfixed.xpr", 0); // q:k (JViewport:JComponent, cd:JFrame)
+// Opening Vivado Project: /users/tareelou/neural_network_sfixed/neural_network_sfixed.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /users/tareelou/neural_network_sfixed/neural_network_sfixed.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /users/tareelou/neural_network_sfixed/neural_network_sfixed.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,075 MB (+44154kb) [00:00:07]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/apps/Xilinx/Vivado/2016.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,112 MB. GUI used memory: 29 MB. Current time: 1/14/21 3:08:06 PM CET
+// Project name: neural_network_sfixed; location: /users/tareelou/neural_network_sfixed; part: xc7z045ffg900-2
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 55 MB (+748kb) [00:00:12]
+// [GUI Memory]: 58 MB (+0kb) [00:00:47]
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// Elapsed time: 331 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, spatial_working_memory - neuronFunction (spatial_working_memory.vhd)]", 2, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, spatial_working_memory - neuronFunction (spatial_working_memory.vhd)]", 2, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // H:a (Workspace:JPanel, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,124 MB. GUI used memory: 29 MB. Current time: 1/14/21 3:13:45 PM CET
+// Elapsed time: 15 seconds
+selectCodeEditor("spatial_working_memory.vhd", 578, 532); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 61 MB (+364kb) [00:06:02]
+// [GUI Memory]: 64 MB (+14kb) [00:22:47]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,126 MB. GUI used memory: 30 MB. Current time: 1/14/21 3:43:45 PM CET
+// Elapsed time: 2097 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // as:DockableFrame
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // g:JideTabbedPane (L:aE, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, neuronal, package_type.vhd]", 7, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, neuronal, package_type.vhd]", 7, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+minimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+// [GUI Memory]: 67 MB (+11kb) [00:42:46]
+// [GUI Memory]: 71 MB (+480kb) [00:52:42]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,127 MB. GUI used memory: 29 MB. Current time: 1/14/21 4:13:45 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/14/21 4:43:45 PM CET
+// [GUI Memory]: 75 MB (+311kb) [01:55:03]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 27 MB. Current time: 1/14/21 5:13:45 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 29 MB. Current time: 1/14/21 5:43:45 PM CET
+// [GUI Memory]: 79 MB (+486kb) [02:56:38]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 29 MB. Current time: 1/14/21 6:13:45 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 29 MB. Current time: 1/14/21 6:43:45 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 29 MB. Current time: 1/14/21 7:13:45 PM CET
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// [GUI Memory]: 83 MB (+127kb) [04:28:04]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 29 MB. Current time: 1/14/21 7:43:45 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/14/21 8:13:45 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/14/21 8:43:45 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/14/21 9:13:45 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 29 MB. Current time: 1/14/21 9:43:45 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/14/21 10:13:45 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 29 MB. Current time: 1/14/21 10:43:45 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/14/21 11:13:45 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/14/21 11:43:45 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 29 MB. Current time: 1/15/21 12:13:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/15/21 12:43:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 29 MB. Current time: 1/15/21 1:13:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/15/21 1:43:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 29 MB. Current time: 1/15/21 2:13:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/15/21 2:43:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/15/21 3:13:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/15/21 3:43:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 29 MB. Current time: 1/15/21 4:13:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/15/21 4:43:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/15/21 5:13:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 29 MB. Current time: 1/15/21 5:43:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/15/21 6:13:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 29 MB. Current time: 1/15/21 6:43:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/15/21 7:13:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/15/21 7:43:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/15/21 8:13:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/15/21 8:43:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/15/21 9:13:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/15/21 9:43:46 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 28 MB. Current time: 1/15/21 10:13:47 AM CET
+// Elapsed time: 66947 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// [Engine Memory]: 1,133 MB (+4453kb) [19:16:51]
+// Elapsed time: 1119 seconds
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_DESIGN_HUBS, "Design Hubs"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 296, 116); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,134 MB. GUI used memory: 27 MB. Current time: 1/15/21 10:43:47 AM CET
+// Elapsed time: 1132 seconds
+selectCodeEditor("spatial_working_memory.vhd", 764, 708); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,135 MB. GUI used memory: 28 MB. Current time: 1/15/21 11:13:47 AM CET
+// Elapsed time: 988 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 698 seconds
+selectCodeEditor("spatial_working_memory.vhd", 185, 446); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,136 MB. GUI used memory: 29 MB. Current time: 1/15/21 11:43:47 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,136 MB. GUI used memory: 29 MB. Current time: 1/15/21 12:13:47 PM CET
+// Elapsed time: 2924 seconds
+selectCodeEditor("spatial_working_memory.vhd", 334, 468, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+// Elapsed time: 51 seconds
+selectCodeEditor("spatial_working_memory.vhd", 33, 425); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 41 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("package_type.vhd", 429, 351); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 131 seconds
+selectCodeEditor("package_type.vhd", 1370, 343); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 44 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("package_type.vhd", 687, 371); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("package_type.vhd", 924, 370); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 590 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("package_type.vhd", 328, 274); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,139 MB. GUI used memory: 29 MB. Current time: 1/15/21 12:43:47 PM CET
+// Elapsed time: 1004 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("spatial_working_memory.vhd", 19, 367); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 48, 413); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,139 MB. GUI used memory: 29 MB. Current time: 1/15/21 1:13:47 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,139 MB. GUI used memory: 28 MB. Current time: 1/15/21 1:43:47 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,139 MB. GUI used memory: 28 MB. Current time: 1/15/21 2:13:47 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,139 MB. GUI used memory: 28 MB. Current time: 1/15/21 2:43:47 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,139 MB. GUI used memory: 28 MB. Current time: 1/15/21 3:13:47 PM CET
+// Elapsed time: 8660 seconds
+selectCodeEditor("spatial_working_memory.vhd", 399, 433); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,139 MB. GUI used memory: 28 MB. Current time: 1/15/21 3:43:47 PM CET
+// Elapsed time: 2757 seconds
+selectCodeEditor("spatial_working_memory.vhd", 613, 520); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 62 seconds
+selectCodeEditor("spatial_working_memory.vhd", 226, 437); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,139 MB. GUI used memory: 28 MB. Current time: 1/15/21 4:13:47 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,139 MB. GUI used memory: 28 MB. Current time: 1/15/21 4:43:47 PM CET
+// Elapsed time: 3811 seconds
+selectCodeEditor("spatial_working_memory.vhd", 261, 476); // bF:I (JPanel:JComponent, cd:JFrame)
+closeMainWindow("neural_network_sfixed - [/users/tareelou/neural_network_sfixed/neural_network_sfixed.xpr] - Vivado 2016.4"); // cd:JFrame
+// y:aO (cd:JFrame): Exit Vivado: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, y:aO)
+dismissDialog("Exit Vivado"); // y:aO (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,140 MB. GUI used memory: 29 MB. Current time: 1/15/21 5:13:47 PM CET
+// Elapsed time: 860 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 246 seconds
+selectCodeEditor("package_type.vhd", 380, 334); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 638, 590); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 638, 590, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 585 seconds
+selectCodeEditor("spatial_working_memory.vhd", 245, 687); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 245, 687, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 85 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/15/21 5:43:47 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/15/21 6:13:47 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/15/21 6:43:47 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/15/21 7:13:47 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/15/21 7:43:48 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/15/21 8:13:48 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/15/21 8:43:48 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/15/21 9:13:48 PM CET
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/15/21 9:43:48 PM CET
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/15/21 10:13:48 PM CET
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/15/21 10:43:48 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/15/21 11:13:48 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/15/21 11:43:48 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 12:13:48 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 12:43:48 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/16/21 1:13:49 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 1:43:49 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 2:13:48 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 2:43:49 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 3:13:48 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 3:43:48 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 4:13:48 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 4:43:48 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 5:13:48 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/16/21 5:43:49 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 6:13:49 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 6:43:49 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 7:13:49 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 7:43:49 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 8:13:49 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 8:43:49 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/16/21 9:13:49 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 9:43:49 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 10:13:49 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 10:43:49 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 11:13:49 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 11:43:49 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 12:13:49 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 12:43:49 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 1:13:49 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 1:43:49 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 2:13:49 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 2:43:49 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 3:13:49 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 3:43:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 4:13:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 4:43:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 5:13:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 5:43:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 6:13:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 6:43:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 7:13:50 PM CET
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 7:43:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 8:13:51 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 8:43:51 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 9:13:51 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 9:43:51 PM CET
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 10:14:07 PM CET
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 9000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 11000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 8000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 10:44:11 PM CET
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 9000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 11000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 12000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 12000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 13000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 14000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 13000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 14000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 15000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 16000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 11000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 9000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 17000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 12000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 9000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 15000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 16000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 11:14:11 PM CET
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 17000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 18000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/16/21 11:44:11 PM CET
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 19000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 18000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 19000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 20000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 20000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 21000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 22000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 21000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 13000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 22000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 23000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 23000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 24000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 27 MB. Current time: 1/17/21 12:14:24 AM CET
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 24000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 25000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/17/21 12:44:27 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/17/21 1:14:27 AM CET
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/17/21 1:44:27 AM CET
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 14000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 25000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 2:14:27 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 2:44:27 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 3:14:27 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 30 MB. Current time: 1/17/21 3:44:27 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 4:14:27 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 4:44:26 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 5:14:27 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 5:44:27 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 30 MB. Current time: 1/17/21 6:14:27 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 30 MB. Current time: 1/17/21 6:44:27 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 30 MB. Current time: 1/17/21 7:14:27 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 30 MB. Current time: 1/17/21 7:44:27 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 8:14:27 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 8:44:27 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 30 MB. Current time: 1/17/21 9:14:27 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 9:44:27 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 30 MB. Current time: 1/17/21 10:14:27 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 10:44:27 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 30 MB. Current time: 1/17/21 11:14:27 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 30 MB. Current time: 1/17/21 11:44:27 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 12:14:27 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 12:44:27 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 1:14:27 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 1:44:27 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 2:14:27 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 2:44:27 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 3:14:27 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 3:44:27 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 4:14:27 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 30 MB. Current time: 1/17/21 4:44:27 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 5:14:27 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 5:44:27 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 6:14:28 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 6:44:28 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 7:14:28 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 30 MB. Current time: 1/17/21 7:44:28 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 8:14:28 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 8:44:28 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 9:14:28 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 9:44:28 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 10:14:28 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 10:44:28 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 11:14:29 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/17/21 11:44:29 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/18/21 12:14:29 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/18/21 12:44:29 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/18/21 1:14:29 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/18/21 1:44:29 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/18/21 2:14:29 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 30 MB. Current time: 1/18/21 2:44:29 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/18/21 3:14:29 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/18/21 3:44:29 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/18/21 4:14:29 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/18/21 4:44:29 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/18/21 5:14:29 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/18/21 5:44:29 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 30 MB. Current time: 1/18/21 6:14:29 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/18/21 6:44:29 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/18/21 7:14:29 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/18/21 7:44:29 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/18/21 8:14:29 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/18/21 8:44:30 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/18/21 9:14:29 AM CET
+// Elapsed time: 229672 seconds
+selectCodeEditor("spatial_working_memory.vhd", 790, 685); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 29 MB. Current time: 1/18/21 9:44:30 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,141 MB. GUI used memory: 28 MB. Current time: 1/18/21 10:14:30 AM CET
+// Elapsed time: 3235 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // as:DockableFrame
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, tree_reduction.vhd]", 10, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, neuro_bio.vhd]", 9, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, neuro_bio.vhd]", 9, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, top_level.vhd]", 11, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, top_level.vhd]", 11, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,152 MB. GUI used memory: 28 MB. Current time: 1/18/21 10:18:55 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,152 MB. GUI used memory: 30 MB. Current time: 1/18/21 10:48:55 AM CET
+// Elapsed time: 2235 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 304 seconds
+minimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+// Elapsed time: 231 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("package_type.vhd", 539, 426); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 117 seconds
+selectCodeEditor("spatial_working_memory.vhd", 227, 679); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 227, 679, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("spatial_working_memory.vhd", 429, 470); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("spatial_working_memory.vhd", 690, 475); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 45 seconds
+selectCodeEditor("spatial_working_memory.vhd", 277, 683); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 277, 683, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 1091, 665); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 652, 670); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("spatial_working_memory.vhd", 605, 235); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 377, 259); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 377, 259, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 37 seconds
+selectCodeEditor("spatial_working_memory.vhd", 805, 249); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 793, 249); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 292 seconds
+selectCodeEditor("spatial_working_memory.vhd", 615, 384); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // as:DockableFrame
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, VHDL, xil_defaultlib, neuro_simul.vhd]", 19, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, VHDL, xil_defaultlib, neuro_simul.vhd]", 19, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("neuro_simul.vhd", 516, 382); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "neuro_simul.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "neuro_simul.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 422, 461); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("neuro_simul.vhd", 308, 385); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "neuro_simul.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "neuro_simul.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+minimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+selectCodeEditor("spatial_working_memory.vhd", 684, 469); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 42 seconds
+selectCodeEditor("spatial_working_memory.vhd", 605, 668); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 605, 668, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 736, 683); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 760, 668); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 760, 668, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 707, 686); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 1309, 683); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 28 MB. Current time: 1/18/21 11:18:55 AM CET
+// Elapsed time: 1197 seconds
+selectCodeEditor("spatial_working_memory.vhd", 388, 596); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 393, 596); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 393, 596, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("spatial_working_memory.vhd", 393, 596); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 395, 596); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 395, 596); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 389, 590); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 389, 590, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("spatial_working_memory.vhd", 160, 669); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 199 seconds
+selectCodeEditor("spatial_working_memory.vhd", 607, 475); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 29 MB. Current time: 1/18/21 11:48:55 AM CET
+// Elapsed time: 486 seconds
+selectCodeEditor("spatial_working_memory.vhd", 379, 284); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 396, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 396, 277, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 47 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 82 seconds
+selectCodeEditor("spatial_working_memory.vhd", 267, 275); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 267, 275, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 29 MB. Current time: 1/18/21 12:18:55 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 29 MB. Current time: 1/18/21 12:48:55 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 30 MB. Current time: 1/18/21 1:18:55 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 29 MB. Current time: 1/18/21 1:48:55 PM CET
+// Elapsed time: 7181 seconds
+selectCodeEditor("spatial_working_memory.vhd", 232, 543); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 151, 288); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 151, 288, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("spatial_working_memory.vhd", 159, 585); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 436, 201); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 137, 261); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 93, 585); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("spatial_working_memory.vhd", 396, 380); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("spatial_working_memory.vhd", 140, 638); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("spatial_working_memory.vhd", 548, 583); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 548, 583, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 200, 291); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 158, 290); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 215, 312); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 261, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 261, 295, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 673, 594); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 448, 259); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 615, 719); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 459, 265); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("spatial_working_memory.vhd", 142, 620); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 21 seconds
+selectCodeEditor("spatial_working_memory.vhd", 266, 321); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 266, 321, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("spatial_working_memory.vhd", 266, 157); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 266, 157, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("spatial_working_memory.vhd", 298, 470); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 298, 470, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 18 seconds
+selectCodeEditor("spatial_working_memory.vhd", 971, 449); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("spatial_working_memory.vhd", 464, 560); // bF:I (JPanel:JComponent, cd:JFrame)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 44 seconds
+selectCodeEditor("spatial_working_memory.vhd", 1049, 22); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 797, 366); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 92 seconds
+selectCodeEditor("spatial_working_memory.vhd", 757, 588); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 82 seconds
+selectCodeEditor("spatial_working_memory.vhd", 830, 425); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 51 seconds
+selectCodeEditor("spatial_working_memory.vhd", 25, 519); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 228 seconds
+selectCodeEditor("spatial_working_memory.vhd", 664, 720); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 57 seconds
+selectCodeEditor("spatial_working_memory.vhd", 45, 486); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // as:DockableFrame
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g:JideTabbedPane (L:aE, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_level - neuronFunction (top_level.vhd)]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_level - neuronFunction (top_level.vhd)]", 1, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+minimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+// Elapsed time: 44 seconds
+selectCodeEditor("top_level.vhd", 189, 525); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 197, 510); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 114, 293); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 114, 293, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("top_level.vhd", 114, 293); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 34, 516); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_level.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 124, 195); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 124, 195, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("spatial_working_memory.vhd", 128, 185); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 128, 185, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("top_level.vhd", 123, 512); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 123, 512, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 95, 488); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 95, 488, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("top_level.vhd", 95, 488); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 105, 608); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 175, 289); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 175, 289, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 204, 624); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 204, 624, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 56, 622); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("top_level.vhd", 133, 608); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 54 seconds
+selectCodeEditor("top_level.vhd", 27, 446); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 23, 470); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 87, 473); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 88, 473); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 28, 502); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 22, 518); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 14, 532); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 29, 547); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 20, 398); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 21, 381); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 28 seconds
+selectCodeEditor("top_level.vhd", 267, 741); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_level.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 298 seconds
+selectCodeEditor("top_level.vhd", 839, 757); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 839, 757, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 27 seconds
+selectCodeEditor("top_level.vhd", 616, 806); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 46 seconds
+selectCodeEditor("top_level.vhd", 173, 503); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 173, 503, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 121, 801); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1, 725); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 134, 798); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectCodeEditor("top_level.vhd", 3, 817); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_level.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 61, 326); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 61, 326, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_level.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("top_level.vhd", 139, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 139, 278, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 343, 768); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 137, 290); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 137, 290, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 581, 780); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 581, 773); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 114, 306); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 114, 306, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 820, 770); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 820, 770, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 957, 768); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 957, 768, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 155, 335); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 155, 335, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 961, 773); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 961, 773, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1117, 772); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1117, 772, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 120, 353); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 120, 353, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1093, 776); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1093, 776, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1232, 771); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1232, 771, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 102, 370); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 102, 370, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1302, 769); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1302, 769, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1420, 773); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1420, 773, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 132, 386); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 132, 386, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1472, 774); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 116, 417); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 116, 416, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1472, 770); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 59 seconds
+selectCodeEditor("top_level.vhd", 398, 556); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 25 seconds
+selectCodeEditor("top_level.vhd", 307, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 320, 261); // bF:I (JPanel:JComponent, cd:JFrame)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // as:DockableFrame
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_level - neuronFunction (top_level.vhd), U2 - tree_reduction - treeFunction (tree_reduction.vhd)]", 3, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_level - neuronFunction (top_level.vhd), U2 - tree_reduction - treeFunction (tree_reduction.vhd)]", 3, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// Elapsed time: 14 seconds
+minimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,159 MB. GUI used memory: 29 MB. Current time: 1/18/21 2:18:56 PM CET
+// Elapsed time: 605 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tree_reduction.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("top_level.vhd", 7, 7); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 32 seconds
+selectCodeEditor("top_level.vhd", 26, 6); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 26, 6, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("top_level.vhd", 26, 6); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_level.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 25, 6); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("spatial_working_memory.vhd", 88, 27); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 89, 22); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 98, 25); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("spatial_working_memory.vhd", 178, 18); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_level.vhd", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("tree_reduction.vhd", 0, 3); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "tree_reduction.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tree_reduction.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("top_level.vhd", 161, 341); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 964 seconds
+selectCodeEditor("top_level.vhd", 825, 449); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,160 MB. GUI used memory: 30 MB. Current time: 1/18/21 2:48:55 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,160 MB. GUI used memory: 30 MB. Current time: 1/18/21 3:18:55 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,160 MB. GUI used memory: 31 MB. Current time: 1/18/21 3:48:55 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,160 MB. GUI used memory: 29 MB. Current time: 1/18/21 4:18:56 PM CET
+// Elapsed time: 6499 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_level.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 27 seconds
+selectCodeEditor("spatial_working_memory.vhd", 138, 340); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // as:DockableFrame
+minimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // as:DockableFrame (aA:FrameContainer, cd:JFrame)
+// Elapsed time: 26 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+// Elapsed time: 27 seconds
+selectMenuItem(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "/users/tareelou/project_1/project_1.xpr"); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Opening Vivado Project: /users/tareelou/project_1/project_1.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_No", "No"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// Tcl Message: open_project /users/tareelou/project_1/project_1.xpr 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: IP_LOCK_CHANGE
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, bt:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,195 MB. GUI used memory: 30 MB. Current time: 1/18/21 4:35:41 PM CET
+// TclEventType: IP_LOCK_CHANGE
+// [Engine Memory]: 1,208 MB (+19540kb) [97:27:48]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_CLOSE
+// Tcl Message: INFO: [Common 17-344] 'open_project' was cancelled 
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,226 MB. GUI used memory: 29 MB. Current time: 1/18/21 4:36:16 PM CET
+// Elapsed time: 149 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "/users/tareelou/neural_network_simul/neural_network_simul.xpr"); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Opening Vivado Project: /users/tareelou/neural_network_simul/neural_network_simul.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_No", "No"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project /users/tareelou/neural_network_simul/neural_network_simul.xpr 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 87 MB (+15kb) [97:30:33]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/apps/Xilinx/Vivado/2016.4/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 6288.156 ; gain = 7.004 ; free physical = 39304 ; free virtual = 78243 
+// Project name: neural_network_simul; location: /users/tareelou/neural_network_simul; part: xc7z045ffg900-2
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_level - neuronFunction (top_level.vhd)]", 1); // y:i (D:JPanel, cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_level - neuronFunction (top_level.vhd)]", 1); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_level - neuronFunction (top_level.vhd)]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_level - neuronFunction (top_level.vhd)]", 1, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+closeMainWindow("neural_network_simul - [/users/tareelou/neural_network_simul/neural_network_simul.xpr] - Vivado 2016.4"); // cd:JFrame
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// bt:g (cd:JFrame):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,240 MB. GUI used memory: 40 MB. Current time: 1/18/21 4:38:52 PM CET
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bt:g (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 35 MB. Current time: 1/18/21 5:08:56 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 32 MB. Current time: 1/18/21 5:38:56 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 32 MB. Current time: 1/18/21 6:08:56 PM CET
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 32 MB. Current time: 1/18/21 6:38:56 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 32 MB. Current time: 1/18/21 7:08:56 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 32 MB. Current time: 1/18/21 7:38:56 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 32 MB. Current time: 1/18/21 8:08:56 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/18/21 8:38:56 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/18/21 9:08:57 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 32 MB. Current time: 1/18/21 9:38:56 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/18/21 10:08:56 PM CET
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (B:b Update Status Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/18/21 10:38:57 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 32 MB. Current time: 1/18/21 11:08:57 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/18/21 11:38:57 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/19/21 12:08:57 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/19/21 12:38:57 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/19/21 1:08:57 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/19/21 1:38:57 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/19/21 2:08:57 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/19/21 2:38:57 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/19/21 3:08:57 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/19/21 3:38:57 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/19/21 4:08:57 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/19/21 4:38:57 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/19/21 5:08:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/19/21 5:38:57 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/19/21 6:08:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/19/21 6:38:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/19/21 7:08:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/19/21 7:38:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/19/21 8:08:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/19/21 8:38:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/19/21 9:08:58 AM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,243 MB. GUI used memory: 31 MB. Current time: 1/19/21 9:38:58 AM CET
+// Elapsed time: 61583 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_level.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("top_level.vhd", 296, 407); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 296, 407, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_level.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 34 seconds
+selectCodeEditor("package_type.vhd", 94, 417); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 94, 417, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 290, 483); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 36 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "find_coordonate_type"); // l:ak (au:e, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 34 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("package_type.vhd", 291, 409); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 447, 320); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 13 seconds
+selectCodeEditor("spatial_working_memory.vhd", 305, 174); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 305, 174, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("spatial_working_memory.vhd", 489, 260, false, false, true, false, false); // bF:I (JPanel:JComponent, cd:JFrame) - Alt Key
+// Elapsed time: 75 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("package_type.vhd", 131, 408); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 131, 408, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("spatial_working_memory.vhd", 243, 743); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 243, 743, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("spatial_working_memory.vhd", 738, 245); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 738, 245, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("top_level.vhd", 125, 409); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 125, 409, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 96, 632); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 117, 593); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 117, 593, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("top_level.vhd", 117, 593); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 90, 637); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 12 seconds
+selectCodeEditor("top_level.vhd", 182, 653); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 180, 655); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 180, 655, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1425, 774); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1425, 774, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 39 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_level.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 269, 190); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 269, 190, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 240, 112); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 240, 112, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 22 seconds
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 281, 113); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("spatial_working_memory.vhd", 288, 112); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 239, 112); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 239, 112, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 240, 143); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 240, 143, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 288, 114); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 285, 139); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Elapsed time: 362 seconds
+selectCodeEditor("spatial_working_memory.vhd", 583, 473); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("spatial_working_memory.vhd", 247, 487); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 224, 491); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,244 MB. GUI used memory: 32 MB. Current time: 1/19/21 10:08:59 AM CET
+// Elapsed time: 766 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("package_type.vhd", 611, 211, false, false, true, false, false); // bF:I (JPanel:JComponent, cd:JFrame) - Alt Key
+selectCodeEditor("package_type.vhd", 591, 240, false, false, true, false, false); // bF:I (JPanel:JComponent, cd:JFrame) - Alt Key
+// Elapsed time: 156 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 325 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 44 seconds
+selectCodeEditor("package_type.vhd", 2, 382); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 91, 383); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 736, 380); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("package_type.vhd", 1093, 379); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 1093, 379, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("package_type.vhd", 738, 383); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 1312, 376); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("package_type.vhd", 119, 386); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 119, 386, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 252, 382); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 252, 382, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("spatial_working_memory.vhd", 1066, 381); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 767, 384); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 652, 385); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 88 seconds
+selectCodeEditor("spatial_working_memory.vhd", 639, 490); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 76 seconds
+selectCodeEditor("spatial_working_memory.vhd", 734, 636); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 38 seconds
+selectCodeEditor("spatial_working_memory.vhd", 612, 439); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 860, 686); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 1010, 686); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 479 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 94 seconds
+selectCodeEditor("spatial_working_memory.vhd", 275, 140); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 275, 140, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("package_type.vhd", 16, 337); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 16, 337, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("package_type.vhd", 16, 337); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 578, 338); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 136, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 136, 278, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 16 seconds
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 229, 348); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 229, 348, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "package_type.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("package_type.vhd", 81, 351); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 81, 351, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 244, 216); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 244, 216, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 236, 172); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 236, 172, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("spatial_working_memory.vhd", 338, 576); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 338, 576, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 371, 621); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 371, 621, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 159, 638); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 159, 638, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 188, 648); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 188, 648, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 343, 652); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 343, 652, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 318, 633); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 318, 633, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 245, 213); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 245, 213, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("spatial_working_memory.vhd", 361, 444); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 361, 444, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,244 MB. GUI used memory: 32 MB. Current time: 1/19/21 10:38:59 AM CET
+// Elapsed time: 157 seconds
+selectCodeEditor("package_type.vhd", 157, 279); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("package_type.vhd", 333, 275); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 170, 276); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 170, 276, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 413, 350); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 631, 393); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 763, 413); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 672, 430); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 588, 293); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 588, 293, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "package_type.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 55 seconds
+selectCodeEditor("package_type.vhd", 158, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 158, 278, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("package_type.vhd", 161, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 273, 344); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 26 seconds
+selectCodeEditor("package_type.vhd", 625, 392); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("spatial_working_memory.vhd", 383, 563); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 383, 563, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("spatial_working_memory.vhd", 279, 161); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 279, 161, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 566, 505); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 34 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "table"); // l:ak (au:e, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 1023, 591); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("spatial_working_memory.vhd", 860, 589); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 860, 589, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 411 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("package_type.vhd", 324, 274); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 43 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 28 seconds
+selectCodeEditor("spatial_working_memory.vhd", 1023, 264); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 1268, 502); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("spatial_working_memory.vhd", 415, 129); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 27 seconds
+selectCodeEditor("spatial_working_memory.vhd", 90, 248); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("spatial_working_memory.vhd", 206, 231); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 206, 231, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 40 seconds
+selectCodeEditor("spatial_working_memory.vhd", 242, 128); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 242, 128, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 134, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 23 seconds
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 284, 257); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 260, 246); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 427, 245); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 202 seconds
+selectCodeEditor("spatial_working_memory.vhd", 159, 126); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 170, 125); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 170, 125, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 862, 322); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 862, 322, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 1117, 559); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 1117, 559, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 39 seconds
+selectCodeEditor("spatial_working_memory.vhd", 414, 370); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 39 seconds
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("package_type.vhd", 114, 245); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 115, 271); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 114, 273, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("package_type.vhd", 114, 273); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 31, 254); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 108, 258); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 108, 258, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "package_type.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 358, 261); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("package_type.vhd", 203, 260); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 203, 260, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "package_type.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 416, 369); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("package_type.vhd", 758, 425); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "package_type.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 38 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 723, 513); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 535, 365); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 535, 365, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 202, 396); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 87 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("spatial_working_memory.vhd", 228, 324); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 228, 324, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 150, 422); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 259, 411); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 197, 432); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 196, 335); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 194, 336); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 194, 336, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("spatial_working_memory.vhd", 194, 336); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 175, 462); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 175, 462, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("spatial_working_memory.vhd", 236, 457); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("spatial_working_memory.vhd", 91, 471); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 91, 471, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("spatial_working_memory.vhd", 91, 471); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 111, 461); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 140, 469); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("spatial_working_memory.vhd", 121, 474); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 273, 504); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,244 MB. GUI used memory: 33 MB. Current time: 1/19/21 11:09:00 AM CET
+// Elapsed time: 1088 seconds
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 300, 508); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 244, 514); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 244, 514, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("spatial_working_memory.vhd", 244, 514); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 362, 519); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 72 seconds
+selectCodeEditor("spatial_working_memory.vhd", 431, 503); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 344 seconds
+selectCodeEditor("spatial_working_memory.vhd", 178, 486); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,244 MB. GUI used memory: 33 MB. Current time: 1/19/21 11:39:00 AM CET
+// Elapsed time: 645 seconds
+selectCodeEditor("spatial_working_memory.vhd", 516, 578); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 516, 578, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 312, 334); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 104 seconds
+selectCodeEditor("spatial_working_memory.vhd", 286, 224); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 332 seconds
+selectCodeEditor("spatial_working_memory.vhd", 432, 110); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 432, 110, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 64 seconds
+selectCodeEditor("spatial_working_memory.vhd", 225, 389); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 225, 385); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 225, 385, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("spatial_working_memory.vhd", 267, 381); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 333, 383); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 183, 349); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 183, 349, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 54 seconds
+selectCodeEditor("spatial_working_memory.vhd", 302, 341); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("package_type.vhd", 580, 109); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 579, 528); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 303, 517); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("top_level.vhd", 331, 379); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 23, 249); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// WARNING: HTimer (WrapperUtils Delayed Delete Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 30 seconds
+selectCodeEditor("top_level.vhd", 385, 446); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 105 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_level.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 415, 581); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 428, 598); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 103 seconds
+selectCodeEditor("spatial_working_memory.vhd", 535, 457); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 72 seconds
+selectCodeEditor("spatial_working_memory.vhd", 201, 593); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("spatial_working_memory.vhd", 161, 503); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 181, 550); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 185, 606); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 202, 559); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 466, 548); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 350, 485); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 350, 485, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 57 seconds
+selectCodeEditor("spatial_working_memory.vhd", 299, 476); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 299, 476, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 540, 412); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 540, 412, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("package_type.vhd", 493, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 20 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "NUMBER_OF_NEURONS_SET_AZIMUTH"); // l:ak (au:e, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 607, 407); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 555, 411); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 555, 411, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("spatial_working_memory.vhd", 514, 170); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("spatial_working_memory.vhd", 424, 168); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 424, 168, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("spatial_working_memory.vhd", 403, 425); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 17 seconds
+selectCodeEditor("spatial_working_memory.vhd", 448, 438); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 524, 505); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 793, 501); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 300, 348); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 300, 348, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("spatial_working_memory.vhd", 300, 348); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 530, 350); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 306, 365); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 243, 370); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 243, 370, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 213, 544); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 177 seconds
+selectCodeEditor("spatial_working_memory.vhd", 323, 547); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 141, 534); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("spatial_working_memory.vhd", 163, 514); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 92 MB (+13kb) [117:00:28]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,244 MB. GUI used memory: 32 MB. Current time: 1/19/21 12:09:00 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,244 MB. GUI used memory: 32 MB. Current time: 1/19/21 12:39:00 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,244 MB. GUI used memory: 34 MB. Current time: 1/19/21 1:09:00 PM CET
+// Elapsed time: 5602 seconds
+selectCodeEditor("spatial_working_memory.vhd", 338, 503); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 274, 497); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 274, 497, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("spatial_working_memory.vhd", 274, 497); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 482, 459); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 73 seconds
+selectCodeEditor("spatial_working_memory.vhd", 302, 483); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,244 MB. GUI used memory: 32 MB. Current time: 1/19/21 1:39:00 PM CET
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 79, 505); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 335, 547); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 303, 489); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 146, 445); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "spatial_working_memory.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 114, 442); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("spatial_working_memory.vhd", 180, 635); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 3, 470); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 23 seconds
+selectCodeEditor("spatial_working_memory.vhd", 220, 596); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 10 seconds
+selectCodeEditor("spatial_working_memory.vhd", 328, 398); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("spatial_working_memory.vhd", 3, 542); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 168 seconds
+selectCodeEditor("spatial_working_memory.vhd", 122, 417); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 438 seconds
+selectCodeEditor("spatial_working_memory.vhd", 149, 576); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("spatial_working_memory.vhd", 564, 383); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_level.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 27 seconds
+selectCodeEditor("top_level.vhd", 135, 214); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("top_level.vhd", 165, 173); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 32 seconds
+selectCodeEditor("top_level.vhd", 194, 214); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 132 seconds
+selectCodeEditor("top_level.vhd", 962, 695); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 962, 695, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 103, 218); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 103, 218, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("top_level.vhd", 944, 697); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 944, 697, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("top_level.vhd", 937, 697); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 937, 697, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1268, 777); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1268, 777, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 381 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_level.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 53 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "NUMBER_OF_NEURONS_SET_AZIMUTH"); // l:ak (au:e, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "package_type.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("top_level.vhd", 334, 370); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("top_level.vhd", 749, 801); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_level.vhd", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("tree_reduction.vhd", 158, 773); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tree_reduction.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("top_level.vhd", 403, 775); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 403, 775, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_level.vhd", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("tree_reduction.vhd", 75, 771); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tree_reduction.vhd", 75, 771, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "tree_reduction.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("tree_reduction.vhd", 241, 300); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "tree_reduction.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("tree_reduction.vhd", 107, 280); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 78 seconds
+selectCodeEditor("tree_reduction.vhd", 17, 504); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("tree_reduction.vhd", 86, 309); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tree_reduction.vhd", 86, 309, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "tree_reduction.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tree_reduction.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_level.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spatial_working_memory.vhd", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("tree_reduction.vhd", 301, 306); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("tree_reduction.vhd", 317, 308); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "tree_reduction.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tree_reduction.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("top_level.vhd", 332, 356); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("top_level.vhd", 140, 368); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 140, 368, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 588, 694); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 769, 697); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_level.vhd", 929, 697); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 929, 697, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 74, 460); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("top_level.vhd", 608, 771); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 608, 771, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 51, 348); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 27 seconds
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 221, 308); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 252, 351); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 301, 367); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 29 seconds
+selectCodeEditor("top_level.vhd", 344, 349); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,246 MB. GUI used memory: 33 MB. Current time: 1/19/21 2:07:06 PM CET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("top_level.vhd", 91, 351); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("top_level.vhd", 91, 351, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 80, 352); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("top_level.vhd", 80, 352, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 876, 774); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 876, 774, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 39, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 39, 277, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("top_level.vhd", 39, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 42, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 42, 277, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 84, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 84, 278, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 819, 778); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("top_level.vhd", 1012, 776); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1012, 776, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("top_level.vhd", 306, 102); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 376, 448); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 370, 459); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 299, 474); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectCodeEditor("top_level.vhd", 155, 474); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 155, 474, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("top_level.vhd", 1175, 712); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1175, 712, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("top_level.vhd", 882, 789); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 882, 789, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 421, 716); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 421, 716, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("top_level.vhd", 1267, 713); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1267, 713, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1021, 791); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("top_level.vhd", 1021, 791, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "top_level.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 15 seconds
+selectCodeEditor("top_level.vhd", 74, 307); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "top_level.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
