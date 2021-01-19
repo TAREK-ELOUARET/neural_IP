@@ -1,3 +1,6 @@
+-- Written BY TAREK ELOUARET, ETIS LABORATORY, UNIVERSITY OF CERGY-PARIS CY
+-- COPYWRITE WELL SAVED
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_signed.all;
@@ -24,10 +27,10 @@ entity spatial_working_memory is
   	flag_reset_image       : in std_logic; -- means that the signature tree has well been sorted
   	
   	signature_neurons      : in table;
-  	signature_weight       : in table; 
+  	signature_weight       : in array_2D := (others =>(others => (others => '0'))); 
   	
-  	azimuth_neurons        : in table;
-  	azimuth_weight         : in table := (others => (others => '0')); -- To change it to fixed point type after into 0.001
+  	azimuth_neurons        : in table_azimuth;
+  	azimuth_weight         : in array_2D_azimuth_weight := (others =>(others => (others => '0'))); -- To change it to fixed point type after into 0.001
   
   	SWM_neurons 		   : out array_2D
   	);
@@ -39,7 +42,7 @@ architecture neuronFunction of spatial_working_memory is
   -- Calculate the absoluate value between two signals
   shared variable SWM_neurons_t 		   : array_2D;
   signal SWM_neurons_weight 	   : std_logic_type; --connection with just one dimension which is signature, later we change it to 2Dimension to mark each weight with its neurons group!!!!
-  shared variable SWM_neurons_flag_learning : std_logic_type;
+  shared variable SWM_neurons_flag_learning : std_logic_type := (others => (others => '0'));
 
     
       function activate_function(Azimuth_neuron :     sfixed -- calculation of maximum (Aj(t) * Wj,il(t))
@@ -59,30 +62,26 @@ architecture neuronFunction of spatial_working_memory is
 
   end function;
   
-    function maximum_set(Azimuth_neuron :     table -- calculation of maximum (Aj(t) * Wj,il(t))
+    function maximum_set_azimuth(Azimuth_neuron :     table_azimuth; l : natural -- calculation of maximum (Aj(t) * Wj,il(t))
                       ) return  sfixed is 
                       variable temp : sfixed(SIZE_WIDTH_T -1 downto -6);
-                      variable Azimuth_neuron_t : table;
 
         begin
-    
-            for j in table'LEFT to table'RIGHT - 1 loop 
-                for i in table'LEFT to table'RIGHT - 1 - j loop 
-                    if Azimuth_neuron(i) <= Azimuth_neuron(i + 1) then
-                        temp := Azimuth_neuron(i);
-                        Azimuth_neuron_t(i) := Azimuth_neuron(i + 1);
-                        Azimuth_neuron_t(i + 1) := temp;
-                    end if;
-                 end loop;
-           end loop;
-        return Azimuth_neuron_t(0);
-
+            temp := Azimuth_neuron (l);
+                      
+            for j in l to l+NUMBER_OF_NEURONS_SET_AZIMUTH -1 loop 
+                    if Azimuth_neuron (j) >= temp then 
+                        temp := Azimuth_neuron (j);
+                    end if;               
+            end loop;
+ 
+        return temp;
     end function;
    
     function linearize_2D_array(Azimuth_neuron :     array_2D -- linearize the matrix neurons into one dimension in order to facilitate its sort!
                      ) return  table_2D_to_1D is 
                      variable Azimuth_neuron_t : table_2D_to_1D;
-                     variable k : integer := 0;
+                     variable k : natural := 0;
         begin
    
            for i in 0 to NUMBER_OF_SIGNATURE_NEURONS - 1 loop 
@@ -95,10 +94,11 @@ architecture neuronFunction of spatial_working_memory is
 
     end function;
   
-    function maximum_set_SWM(Azimuth_neuron :     table_2D_to_1D -- calculation of maximum neuron value to get updated its weight connection!
+    function maximum_set_SWM(Azimuth_neuron :     table_2D_to_1D; SWM_neurons_flag_learning: std_logic_type -- calculation of maximum neuron value to get updated its weight connection!
                       ) return  sfixed is 
                       variable temp : sfixed(SIZE_WIDTH_T -1 downto -6);
-                      variable Azimuth_neuron_t : table;
+                      variable Azimuth_neuron_t : table_azimuth;
+                      variable k : natural := 0;
 
         begin
     
@@ -111,12 +111,21 @@ architecture neuronFunction of spatial_working_memory is
                     end if;
                  end loop;
            end loop;
-        return Azimuth_neuron_t(0);
+           
+            for i in 0 to NUMBER_OF_SIGNATURE_NEURONS - 1 loop -- To pick up which maximum neuron is requierd to take among all pre-trained ones !!!!
+               for j in 0 to NUMBER_OF_column_NEURONS - 1 loop 
+                    if SWM_neurons_flag_learning (i,j) = '1' then 
+                        k := k+1;
+                    end if;
+                end loop;
+          end loop;
+          
+        return Azimuth_neuron_t(k);
 
    end function;
    
    
-       function find_coordonate(Maximum_neuron :     sfixed; SWM_neurons_t_t :array_2D -- Extract I,J coordoonate to update their flag_signal !!
+       function find_coordonate(Maximum_neuron :     sfixed; SWM_neurons_t_t :array_2D; SWM_neurons_flag_learning: std_logic_type -- Extract I,J coordoonate to update their flag_signal !!
                      ) return  find_coordonate_type is 
 
                      variable return_values : find_coordonate_type;
@@ -126,7 +135,7 @@ architecture neuronFunction of spatial_working_memory is
             for i in 0 to NUMBER_OF_SIGNATURE_NEURONS - 1 loop 
                 for j in 0 to NUMBER_OF_column_NEURONS - 1 loop 
                 
-                    if Maximum_neuron = SWM_neurons_t_t(i,j) then 
+                    if Maximum_neuron = SWM_neurons_t_t(i,j) and SWM_neurons_flag_learning (i,j) /= '1' then -- find the coordonate I,J though the maximium curent neuron and its flag_learning value !!!!
                         return_values (0) := i; return_values (1) := j;
                     end if;
                 end loop;
@@ -140,7 +149,7 @@ begin
 
 	
 	SWM:process (clk)
-	variable Azimuth_neuron_t :     table;
+	variable Azimuth_neuron_t :     table_azimuth;
 	variable l :     integer;
 	
 	begin 
@@ -162,13 +171,13 @@ begin
 		                l := 0;
                         for j in 0 to NUMBER_OF_column_NEURONS -1 loop
                             
-                            for k in l to l+2 loop
-                                Azimuth_neuron_t(k) := azimuth_neurons(k) * azimuth_weight(k);
+                            for k in l to l+NUMBER_OF_NEURONS_SET_AZIMUTH -1 loop
+                                Azimuth_neuron_t(k) := azimuth_neurons(k) * azimuth_weight(i,k);
                             end loop;
                                                 
-		                    SWM_neurons_t(i,j) := activate_function((signature_neurons(j) * signature_weight(j)) * (maximum_set(Azimuth_neuron_t)));	                    
+		                    SWM_neurons_t(i,j) := activate_function((signature_neurons(i) * signature_weight(i,j)) * (maximum_set_azimuth(Azimuth_neuron_t, l)));	                    
 		                    l := l+3;
-		          end loop;
+		                end loop;
 		          end loop;
 		          flag_SWM <= '1';
 		          
@@ -178,11 +187,11 @@ begin
                             l := 0;
                             for j in 0 to NUMBER_OF_column_NEURONS -1 loop
                                           
-                                          for k in l to l+2 loop
-                                              Azimuth_neuron_t(k) := azimuth_neurons(k) * azimuth_weight(k);
+                                          for k in l to l+NUMBER_OF_NEURONS_SET_AZIMUTH -1 loop
+                                              Azimuth_neuron_t(k) := azimuth_neurons(k) * azimuth_weight(i,k);
                                           end loop;
                                                               
-                                          SWM_neurons_t(i,j) := activate_function( SWM_neurons_t(i,j) + (signature_neurons(j) * signature_weight(j)) * (maximum_set(Azimuth_neuron_t)));                        
+                                          SWM_neurons_t(i,j) := activate_function(SWM_neurons_t(i,j) + (signature_neurons(i) * signature_weight(i,j)) * (maximum_set_azimuth(Azimuth_neuron_t, l)));                        
                                           l := l+3;
                             end loop;
                     end loop;
@@ -203,13 +212,13 @@ begin
             if flag_learning = '1' then
                 --if rising_edge(clk) then 
                      flag_SWM <= '0'; -- to reset flag_swm_calculation for next itteration!!
-                     Maximum_learning_value := maximum_set_SWM(linearize_2D_array(SWM_neurons_t)); -- CHOOSE THE MAXIMUM VALUE FROM NEURONS TO be UPDATE & LEARN
+                     Maximum_learning_value := maximum_set_SWM(linearize_2D_array(SWM_neurons_t), SWM_neurons_flag_learning); -- CHOOSE THE MAXIMUM VALUE FROM NEURONS TO be UPDATE & LEARN
                      
 
                      -- UPDATE NOW THE WEIGHT OF THE SELECTED NEURON WITH MAXIMUM VALUE!  
                      -- UPDATE the signal weight flag of neurons to not compete in the next itteration while reset = 0 for same image!!  
-                     SWM_neurons_weight(find_coordonate(Maximum_learning_value, SWM_neurons_t)(0), find_coordonate(Maximum_learning_value, SWM_neurons_t)(1)) <= '1';--Through coordonate i and J, we update the weight of the selected competeor neuron!!
-                     SWM_neurons_flag_learning (find_coordonate(Maximum_learning_value, SWM_neurons_t)(0), find_coordonate(Maximum_learning_value, SWM_neurons_t)(1)) := '1'; -- flag_signal as reference of weight update completion for current image, we should reset it just after getting a new image!!!!
+                     SWM_neurons_weight(find_coordonate(Maximum_learning_value, SWM_neurons_t, SWM_neurons_flag_learning)(0), find_coordonate(Maximum_learning_value, SWM_neurons_t, SWM_neurons_flag_learning)(1)) <= '1';--Through coordonate i and J, we update the weight of the selected competeor neuron!!
+                     SWM_neurons_flag_learning (find_coordonate(Maximum_learning_value, SWM_neurons_t, SWM_neurons_flag_learning)(0), find_coordonate(Maximum_learning_value, SWM_neurons_t, SWM_neurons_flag_learning)(1)) := '1'; -- flag_signal as reference of weight update completion for current image, we should reset it just after getting a new image!!!!
                 --end if;
             end if;
        end if;

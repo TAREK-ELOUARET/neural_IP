@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-| Date         : Wed Jan 13 11:13:16 2021
+| Date         : Wed Jan 13 14:38:20 2021
 | Host         : asterix.etis-lab.fr running 64-bit Ubuntu 18.04.5 LTS
 | Command      : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
 | Design       : top_level
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             | 1057 |     0 |    218600 |  0.48 |
-|   LUT as Logic          | 1057 |     0 |    218600 |  0.48 |
+| Slice LUTs*             | 1059 |     0 |    218600 |  0.48 |
+|   LUT as Logic          | 1059 |     0 |    218600 |  0.48 |
 |   LUT as Memory         |    0 |     0 |     70400 |  0.00 |
 | Slice Registers         |   72 |     0 |    437200 |  0.02 |
 |   Register as Flip Flop |   72 |     0 |    437200 |  0.02 |
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+--------+
 |          Site Type          | Used | Fixed | Available |  Util% |
 +-----------------------------+------+-------+-----------+--------+
-| Bonded IOB                  |  486 |     0 |       362 | 134.25 |
+| Bonded IOB                  |  926 |     0 |       362 | 255.80 |
 | Bonded IPADs                |    0 |     0 |        50 |   0.00 |
 | Bonded OPADs                |    0 |     0 |        32 |   0.00 |
 | Bonded IOPADs               |    0 |     0 |       130 |   0.00 |
@@ -152,14 +152,14 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| OBUF     |  440 |                  IO |
-| LUT4     |  307 |                 LUT |
-| LUT3     |  227 |                 LUT |
+| OBUF     |  880 |                  IO |
+| LUT4     |  306 |                 LUT |
+| LUT5     |  229 |                 LUT |
 | CARRY4   |  210 |          CarryLogic |
-| LUT5     |  209 |                 LUT |
-| LUT2     |  206 |                 LUT |
-| LUT6     |  200 |                 LUT |
-| LUT1     |  116 |                 LUT |
+| LUT3     |  208 |                 LUT |
+| LUT6     |  201 |                 LUT |
+| LUT2     |  184 |                 LUT |
+| LUT1     |  139 |                 LUT |
 | FDRE     |   50 |        Flop & Latch |
 | IBUF     |   46 |                  IO |
 | FDCE     |   22 |        Flop & Latch |

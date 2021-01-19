@@ -10,6 +10,10 @@
 --library neuronal;
 --use neuronal.package_type.all;
 
+--use neuronal.float_pkg.all;
+--use neuronal.fixed_pkg.all;
+--use neuronal.fixed_float_types.all;
+
 --entity neuro_simul is
 --    --  Port ( );
 --end neuro_simul;
@@ -114,7 +118,7 @@ component top_level is
     pixel         : in sfixed(SIZE_WIDTH_T - 1 downto -6);
     weight      : in sfixed(SIZE_WIDTH_T - 1 downto -6);
   
-    --VecOut_weighted_sum             : out table;
+    VecOut_weighted_sum             : out table;
     VecOut_mux                      : out table
     );
 end component top_level;
@@ -124,7 +128,7 @@ end component top_level;
     signal pixel            : sfixed(SIZE_WIDTH_T - 1 downto -6):= ( 1 => '1', 2 => '0', others =>'0');
     signal weight           : sfixed(SIZE_WIDTH_T - 1 downto -6):= ( 1 => '1', 2 => '1', others =>'0');
                                                                
-    --signal VecOut_weighted_sum 		: table := (others => (others => '0'));
+    signal VecOut_weighted_sum 		: table := (others => (others => '0'));
     signal VecOut_mux 		        : table;
 
     
@@ -136,7 +140,7 @@ begin
         reset => reset,
         pixel => pixel,
         weight => weight,
-        --VecOut_weighted_sum => VecOut_weighted_sum,
+        VecOut_weighted_sum => VecOut_weighted_sum,
         VecOut_mux => VecOut_mux
       );
     
@@ -146,8 +150,11 @@ begin
     
     clk     <=    not clk after 10 ns;
     reset   <=    not reset after 700 ns;
-    pixel   <=    ( 1 => '1', 2 => '0', others =>'0')  after 20 ns;
-    weight  <=    ( 1 => '1', 2 => '1', others =>'0') after 20 ns;
+--    pixel   <=    ( 1 => '1', 2 => '0', others =>'0')  after 20 ns;
+--    weight  <=    ( 1 => '1', 2 => '1', others =>'0') after 20 ns;
+
+    pixel   <=    resize((pixel + 1), pixel) after 20 ns;
+    weight  <=    resize((weight + 1), weight) after 20 ns;
     
     
 end Behavioral;

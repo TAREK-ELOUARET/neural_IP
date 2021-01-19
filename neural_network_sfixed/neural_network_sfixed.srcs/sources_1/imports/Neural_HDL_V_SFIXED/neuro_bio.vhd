@@ -47,43 +47,45 @@ begin
 	begin 
 	
 		      if reset = '1' then result := sfixed (to_signed(0, result'length));	       
-		  	     else if rising_edge(clk) then 
-		  	           if cnt < NBR_PIXELS then
+		  	  
+		  	  else    
+		  	       if rising_edge(clk) then 
+		  	               if cnt < NBR_PIXELS then
 		  	           
-		  	                   if cnt = 0 then -- ABS & add operations
+		  	                       if cnt = 0 then -- ABS & add operations
 		  	                          result := sfixed (to_signed(0, result'length));
                                       
                                       if (pixel >= weight) then result := resize(result + resize((pixel - weight), result), result);
-                                      else result := resize(result + resize((weight - pixel), result), result);
+                                      else result := resize(result + resize(-(pixel - weight), result), result);
                                       end if;
   				                      
   				                      cnt    := cnt + 1;
   				                      flag_t := 0;
   				                      
-  				               else if cnt = NBR_PIXELS - 1 then -- devision & substruction operations
+  				                   elsif cnt = NBR_PIXELS - 1 then -- devision & substruction operations
   				                      --result := resize(result + resize(ABS_FUNCTION(pixel - weight), result), result);
   				                                                            
                                         if (pixel >= weight) then result := resize(result + resize((pixel - weight), result), result);
-                                        else result := resize(result + resize((weight - pixel), result), result);
+                                        else result := resize(result + resize(-(pixel - weight), result), result);
                                         end if;
                                         
   				                        result := resize ((sfixed (to_signed(1, result'length)) - (result / NBR_NEURON)), result);
                                         cnt    := 0;
                                         flag_t := 1;
-  				               else  
+  				                   else  
   				                      --result := resize(result + resize(ABS_FUNCTION(pixel - weight), result), result);
   				                                                            
                                         if (pixel >= weight) then result := resize(result + resize(pixel - weight, result), result);
-                                        else result := resize(result + resize((weight - pixel), result), result);
+                                        else result := resize(result + resize(-(pixel - weight), result), result);
                                         end if;
                                         
                                         cnt    := cnt + 1;
                                         flag_t := 0;
-                               end if;   
-                       end if;    
-			          end if;
-		         end if;
-		      end if;
+                                  end if;   
+                            end if;    
+			       end if;
+            end if;
+
 	VecOut <= sfixed (to_signed(result, vecOut'length));
     flag_t_vector <= std_logic_vector(to_signed(flag_t, flag_t_vector'length));
 

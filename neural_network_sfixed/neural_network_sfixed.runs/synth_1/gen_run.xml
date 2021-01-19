@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z045ffg900-2" LaunchTime="1610532753">
+<GenRun Id="synth_1" LaunchPart="xc7z045ffg900-2" LaunchTime="1610545056">
   <File Type="VDS-TIMING-PB" Name="top_level_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="top_level_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="top_level.dcp"/>
@@ -75,6 +75,13 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../Bureau/Neural_HDL_V_SFIXED/top_level.vhd"/>
         <Attr Name="ImportTime" Val="1606316737"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/spatial_working_memory.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
