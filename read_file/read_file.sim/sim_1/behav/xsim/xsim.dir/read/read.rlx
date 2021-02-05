@@ -1,0 +1,8 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/tarek/read_file/read_file.srcs/sources_1/new/fixed_float_types_c.vhd,1612344633,vhdl,/home/tarek/read_file/read_file.srcs/sim_1/new/read_simul.vhd;/home/tarek/read_file/read_file.srcs/sources_1/new/counter.vhd;/home/tarek/read_file/read_file.srcs/sources_1/new/fixed_pkg_c.vhd;/home/tarek/read_file/read_file.srcs/sources_1/new/float_pkg_c.vhd;/home/tarek/read_file/read_file.srcs/sources_1/new/read_package.vhd,,,fixed_float_types,,,,,,,,
+/home/tarek/read_file/read_file.srcs/sources_1/new/fixed_pkg_c.vhd,1612344805,vhdl,/home/tarek/read_file/read_file.srcs/sim_1/new/read_simul.vhd;/home/tarek/read_file/read_file.srcs/sources_1/new/counter.vhd;/home/tarek/read_file/read_file.srcs/sources_1/new/float_pkg_c.vhd;/home/tarek/read_file/read_file.srcs/sources_1/new/read_package.vhd,,,fixed_pkg,,,,,,,,
+/home/tarek/read_file/read_file.srcs/sources_1/new/float_pkg_c.vhd,1612344711,vhdl,/home/tarek/read_file/read_file.srcs/sim_1/new/read_simul.vhd;/home/tarek/read_file/read_file.srcs/sources_1/new/counter.vhd;/home/tarek/read_file/read_file.srcs/sources_1/new/read_package.vhd,,,float_pkg,,,,,,,,
+/home/tarek/read_file/read_file.srcs/sources_1/new/read_package.vhd,1612357370,vhdl,/home/tarek/read_file/read_file.srcs/sim_1/new/read_simul.vhd;/home/tarek/read_file/read_file.srcs/sources_1/new/counter.vhd,,,read_package,,,,,,,,

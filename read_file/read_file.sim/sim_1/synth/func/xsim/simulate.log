@@ -1,0 +1,7 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ERROR: File ../../../../ram_content.txt is not open. Cannot call endfile on it
+Time: 0 ps  Iteration: 0  Process: /neuro_simul/line__58
+  File: /home/tarek/read_file/read_file.srcs/sim_1/new/read_simul.vhd
+
+HDL Line: /home/tarek/read_file/read_file.srcs/sim_1/new/read_simul.vhd:31

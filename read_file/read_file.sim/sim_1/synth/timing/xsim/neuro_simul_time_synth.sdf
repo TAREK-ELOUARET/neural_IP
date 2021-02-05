@@ -1,0 +1,19 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "counter")
+(DATE "Thu Feb  4 13:48:53 2021")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2018.3")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "OBUFT")
+  (INSTANCE file_out_OBUF\[\-1\]_inst)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH I O (0.0:0.0:0.0) )
+    )
+  )
+)
+)

@@ -1,0 +1,1 @@
+-wto "8097f62d4a1d493e933fdc0e3d62200b" --incr --debug "typical" --relax --mt "8" -L "read_package_library" -L "xil_defaultlib" -L "secureip" --snapshot "neuro_simul_behav" "xil_defaultlib.neuro_simul" -log "elaborate.log" 

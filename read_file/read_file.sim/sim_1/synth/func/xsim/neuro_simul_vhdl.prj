@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"neuro_simul_func_synth.vhd" \
+"../../../../../read_file.srcs/sim_1/new/read_simul.vhd" \
+
+# Do not sort compile order
+nosort

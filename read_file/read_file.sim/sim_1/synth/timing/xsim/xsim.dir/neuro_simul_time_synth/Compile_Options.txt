@@ -1,0 +1,1 @@
+-wto "8097f62d4a1d493e933fdc0e3d62200b" --incr --debug "typical" --relax --mt "8" --maxdelay -L "xil_defaultlib" -L "read_package_library" -L "simprims_ver" -L "secureip" --snapshot "neuro_simul_time_synth" -transport_int_delays -pulse_r "0" -pulse_int_r "0" -pulse_e "0" -pulse_int_e "0" "xil_defaultlib.neuro_simul" "xil_defaultlib.glbl" -log "elaborate.log" 

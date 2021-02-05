@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1612517444">
+  <File Type="VDS-TIMING-PB" Name="counter_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="counter_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="counter.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="counter_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="counter_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="counter_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="counter.vds"/>
+  <File Type="REPORTS-TCL" Name="counter_reports.tcl"/>
+  <File Type="PA-TCL" Name="counter.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/fixed_float_types_c.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="read_package_library"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fixed_pkg_c.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="read_package_library"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/float_pkg_c.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="read_package_library"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/read_package.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="read_package_library"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/counter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="counter"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

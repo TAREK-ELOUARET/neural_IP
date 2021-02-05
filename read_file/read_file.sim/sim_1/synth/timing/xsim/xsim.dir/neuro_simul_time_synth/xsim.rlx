@@ -1,0 +1,12 @@
+
+{ 
+    crc :  3415128676651728494  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 8097f62d4a1d493e933fdc0e3d62200b --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L read_package_library -L simprims_ver -L secureip --snapshot neuro_simul_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.neuro_simul xil_defaultlib.glbl" , 
+    buildDate : "Dec  6 2018" , 
+    buildTime : "23:39:36" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/neuro_simul_time_synth/xsimk\"   \"xsim.dir/neuro_simul_time_synth/obj/xsim_0.lnx64.o\" \"xsim.dir/neuro_simul_time_synth/obj/xsim_1.lnx64.o\" -L\"/usr/lsa/apps/Xilinx/Vivado/2018.3/lib/lnx64.o\" -lrdi_simulator_kernel  -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 
